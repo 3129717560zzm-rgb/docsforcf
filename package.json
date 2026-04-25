@@ -6,10 +6,12 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --host 0.0.0.0",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs --host 0.0.0.0"
+    "docs:preview": "vitepress preview docs --host 0.0.0.0",
+    "worker:deploy": "npm run docs:build && wrangler deploy"
   },
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "wrangler": "^4.14.1"
   },
   "overrides": {
     "vite": "6.4.2"
