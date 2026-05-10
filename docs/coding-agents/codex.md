@@ -19,7 +19,7 @@ Codex 支持 CLI 和 VS Code 插件。两种配置方式：**CC Switch（推荐�
 
 打开 CC Switch → 新增 Codex Provider → 填表 → 启用。详细步骤见 [CC Switch 配置](/coding-agents/cc-switch#配-codex)。
 
-<div class="zzm-img-placeholder">📷 CC Switch Codex 配置完成效果</div>
+<!-- SCREENSHOT: CC Switch Codex 配置完成效果 -->
 
 ## 方式二：手动配置
 
@@ -35,7 +35,7 @@ npm install -g @openai/codex
 codex --version
 ```
 
-<div class="zzm-img-placeholder">📷 终端 codex --version 输出</div>
+<!-- SCREENSHOT: 终端 codex --version 输出 -->
 
 ### 创建令牌
 
@@ -79,7 +79,7 @@ requires_openai_auth = true
 
 </div>
 
-<div class="zzm-img-placeholder">📷 config.toml 和 auth.json 编辑器截图</div>
+<!-- SCREENSHOT: config.toml 和 auth.json 编辑器截图 -->
 
 保存后运行：
 
@@ -96,7 +96,7 @@ codex
 2. 插件自动读取 `~/.codex/config.toml`。
 3. 先配好 CLI，再打开插件。
 
-<div class="zzm-img-placeholder">📷 VS Code Codex 插件侧边栏</div>
+<!-- SCREENSHOT: VS Code Codex 插件侧边栏 -->
 
 ## 常见坑
 

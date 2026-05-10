@@ -7,7 +7,7 @@ description: 用 CC Switch 统一管理 Claude Code、Codex、Gemini CLI 的 API
 
 CC Switch 是图形化的供应商管理器，可以给 Claude Code、Codex、Gemini CLI 统一配置 API 地址和 Key。不用手动改文件，填表就能配。
 
-<div class="zzm-img-placeholder">📷 CC Switch 主界面概览</div>
+<!-- SCREENSHOT: CC Switch 主界面概览 -->
 
 ## 下载安装
 
@@ -19,7 +19,7 @@ CC Switch 是图形化的供应商管理器，可以给 Claude Code、Codex、Ge
 | macOS | `.dmg` 安装包，或 `brew install --cask cc-switch` |
 | Linux | `.deb` / `.rpm` / `.AppImage` |
 
-<div class="zzm-img-placeholder">📷 CC Switch 下载页面</div>
+<!-- SCREENSHOT: CC Switch 下载页面 -->
 
 ## 添加 ZZM API 供应商
 
@@ -42,7 +42,7 @@ CC Switch 是图形化的供应商管理器，可以给 Claude Code、Codex、Ge
 
 </div>
 
-<div class="zzm-img-placeholder">📷 CC Switch Codex 配置界面</div>
+<!-- SCREENSHOT: CC Switch Codex 配置界面 -->
 
 ### 配 Claude Code
 
@@ -64,7 +64,7 @@ CC Switch 是图形化的供应商管理器，可以给 Claude Code、Codex、Ge
   <strong>注意</strong>：Claude Code 地址不要加 <code>/v1</code>。Codex 必须加 <code>/v1</code>。两个地址不一样。
 </div>
 
-<div class="zzm-img-placeholder">📷 CC Switch Claude Code 配置界面</div>
+<!-- SCREENSHOT: CC Switch Claude Code 配置界面 -->
 
 ### 配 Gemini CLI
 
@@ -87,7 +87,7 @@ CC Switch 是图形化的供应商管理器，可以给 Claude Code、Codex、Ge
 2. 重启 Claude Code、Codex 或 VS Code。
 3. 发一句短问题测试，比如「只回复 OK」。
 
-<div class="zzm-img-placeholder">📷 CC Switch 启用 Provider 的状态</div>
+<!-- SCREENSHOT: CC Switch 启用 Provider 的状态 -->
 
 不通就去 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型。
 

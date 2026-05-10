@@ -11,7 +11,7 @@ ZZM API 支持 gpt-image-2 生图模型。有现成的生图网站，也可以�
 
 直接打开 [image.zzmsgdsg.xyz](https://image.zzmsgdsg.xyz)，在网页上输入提示词即可生图。
 
-<div class="zzm-img-placeholder">📷 image.zzmsgdsg.xyz 生图网站首页</div>
+<!-- SCREENSHOT: image.zzmsgdsg.xyz 生图网站首页 -->
 
 <div class="zzm-tip">
   生图网站已经内置了 API 配置，<strong>不需要额外填 Key 和地址</strong>。打开就能用。

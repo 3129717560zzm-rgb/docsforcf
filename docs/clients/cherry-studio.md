@@ -7,7 +7,7 @@ description: Cherry Studio 聊天客户端接入 ZZM API，支持对话模型和
 
 Cherry Studio 是桌面端 AI 聊天客户端。支持对话和生图，两个功能分开配置。
 
-<div class="zzm-img-placeholder">📷 Cherry Studio 主界面</div>
+<!-- SCREENSHOT: Cherry Studio 主界面 -->
 
 ## 下载安装
 
@@ -34,7 +34,7 @@ Cherry Studio 是桌面端 AI 聊天客户端。支持对话和生图，两个�
 
 </div>
 
-<div class="zzm-img-placeholder">📷 Cherry Studio 新增服务商配置页面</div>
+<!-- SCREENSHOT: Cherry Studio 新增服务商配置页面 -->
 
 <div class="zzm-tip">
   <strong>地址注意</strong>：大部分 Cherry Studio 版本填 <code>https://zzmapi.zzmsgdsg.xyz/v1</code>。如果你的版本提示"会自动拼接 /v1"，就改为只填根域名 <code>https://zzmapi.zzmsgdsg.xyz</code>。
@@ -42,7 +42,7 @@ Cherry Studio 是桌面端 AI 聊天客户端。支持对话和生图，两个�
 
 4. 保存，新增一个对话，选择刚添加的模型，发消息测试。
 
-<div class="zzm-img-placeholder">📷 Cherry Studio 对话成功效果</div>
+<!-- SCREENSHOT: Cherry Studio 对话成功效果 -->
 
 ## 配生图模型
 
