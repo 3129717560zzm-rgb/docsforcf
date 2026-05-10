@@ -11,7 +11,7 @@ description: 注册账号、充值、创建令牌、操练场测试，五分钟�
 
 打开 [ZZM API 控制台](https://zzmapi.zzmsgdsg.xyz)，用户名注册登录。邮箱注册后续开放。
 
-<!-- SCREENSHOT: 注册/登录页面 -->
+<div class="zzm-img-placeholder">📷 注册/登录页面</div>
 
 ## 2. 充值
 
@@ -38,7 +38,7 @@ description: 注册账号、充值、创建令牌、操练场测试，五分钟�
   <strong>安全提醒</strong>：Key 只给自己用。不要发群里、不要截图发出去、不要写进公开仓库。一个工具一个 Key，不用了就删。
 </div>
 
-<!-- SCREENSHOT: 创建令牌页面，标注分组下拉框和复制按钮 -->
+<div class="zzm-img-placeholder">📷 创建令牌页面，标注分组下拉框和复制按钮</div>
 
 ## 4. 操练场测试
 
@@ -46,7 +46,7 @@ description: 注册账号、充值、创建令牌、操练场测试，五分钟�
 
 能正常返回，说明令牌没问题。接下来配软件。
 
-<!-- SCREENSHOT: 操练场测试成功 -->
+<div class="zzm-img-placeholder">📷 操练场测试成功</div>
 
 ## 5. 填地址
 

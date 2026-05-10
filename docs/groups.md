@@ -9,7 +9,7 @@ ZZM API 有多个令牌分组，每个分组对应不同的上游号池和倍率
 
 创建令牌时，在分组下拉框里选择对应分组。默认分组为 **claude专用稳定**。
 
-<!-- SCREENSHOT: 创建令牌页面，标注分组下拉框位置 -->
+<div class="zzm-img-placeholder">📷 创建令牌页面，标注分组下拉框位置</div>
 
 ## 分组速查
 
@@ -100,4 +100,4 @@ ZZM API 有多个令牌分组，每个分组对应不同的上游号池和倍率
 
 分组和模型有对应关系，不是所有模型都能在所有分组用。具体以控制台 [模型与定价](https://zzmapi.zzmsgdsg.xyz/pricing) 页面实时显示为准。
 
-<!-- SCREENSHOT: 控制台 pricing 页面，展示模型-分组对应关系 -->
+<div class="zzm-img-placeholder">📷 控制台 pricing 页面，展示模型-分组对应关系</div>

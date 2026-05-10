@@ -25,7 +25,7 @@ description: Codex 插件、Claude Code 插件、Cline、Roo Code 接入 ZZM API
 3. 确认底层 CLI 能正常跑通。
 4. 去 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 确认 Key 和模型都没问题。
 
-<!-- SCREENSHOT: VS Code 扩展面板，Codex 和 Claude Code 插件已安装 -->
+<div class="zzm-img-placeholder">📷 VS Code 扩展面板，Codex 和 Claude Code 插件已安装</div>
 
 ## Codex 插件
 
@@ -35,7 +35,7 @@ description: Codex 插件、Claude Code 插件、Cline、Roo Code 接入 ZZM API
 
 地址：`https://zzmapi.zzmsgdsg.xyz/v1`
 
-<!-- SCREENSHOT: Codex 插件侧边栏运行效果 -->
+<div class="zzm-img-placeholder">📷 Codex 插件侧边栏运行效果</div>
 
 ## Claude Code 插件
 
@@ -45,7 +45,7 @@ description: Codex 插件、Claude Code 插件、Cline、Roo Code 接入 ZZM API
 
 地址：`https://zzmapi.zzmsgdsg.xyz`
 
-<!-- SCREENSHOT: Claude Code 插件侧边栏运行效果 -->
+<div class="zzm-img-placeholder">📷 Claude Code 插件侧边栏运行效果</div>
 
 ## Cline / Roo Code
 
