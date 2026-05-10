@@ -49,12 +49,12 @@ Codex 带 `/v1`，Claude Code 和 Gemini 不带——记住这一句就够了。
 ## 按工具找
 
 <div class="zzm-home-quick">
-  <a href="/coding-agents/claude-code"><span class="icon">◈</span> Claude Code</a>
-  <a href="/coding-agents/codex"><span class="icon">◈</span> Codex</a>
-  <a href="/coding-agents/gemini-cli"><span class="icon">◈</span> Gemini CLI</a>
-  <a href="/clients/cherry-studio"><span class="icon">◈</span> Cherry Studio</a>
-  <a href="/image-generation"><span class="icon">◈</span> gpt-image-2 生图</a>
-  <a href="/api/"><span class="icon">◈</span> API / SDK</a>
+  <a href="/coding-agents/claude-code"><span class="icon">⚡</span> Claude Code</a>
+  <a href="/coding-agents/codex"><span class="icon">🚀</span> Codex</a>
+  <a href="/coding-agents/gemini-cli"><span class="icon">🧠</span> Gemini CLI</a>
+  <a href="/clients/cherry-studio"><span class="icon">💬</span> Cherry Studio</a>
+  <a href="/image-generation"><span class="icon">🎨</span> gpt-image-2 生图</a>
+  <a href="/api/"><span class="icon">🔌</span> API / SDK</a>
 </div>
 
 ## 常用入口
