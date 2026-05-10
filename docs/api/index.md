@@ -9,11 +9,17 @@ ZZM API 同时支持三种协议：OpenAI、Anthropic、Gemini。不同工具用
 
 ## 地址与协议
 
-| 协议 | Base URL | 适用工具 |
+**配置工具时填的是 Base URL**，工具会自动拼接具体接口路径。直接 curl 时需要写完整 URL。
+
+| 协议 | 工具配置 Base URL | 直接 curl 示例 |
 | --- | --- | --- |
-| OpenAI 兼容 | `https://zzmapi.zzmsgdsg.xyz/v1` | Codex、Cherry Studio、OpenAI SDK |
-| Anthropic 兼容 | `https://zzmapi.zzmsgdsg.xyz` | Claude Code |
-| Gemini 兼容 | `https://zzmapi.zzmsgdsg.xyz` | Gemini CLI |
+| OpenAI 兼容 | `https://zzmapi.zzmsgdsg.xyz/v1` | `https://zzmapi.zzmsgdsg.xyz/v1/chat/completions` |
+| Anthropic 兼容 | `https://zzmapi.zzmsgdsg.xyz` | `https://zzmapi.zzmsgdsg.xyz/v1/messages` |
+| Gemini 兼容 | `https://zzmapi.zzmsgdsg.xyz` | `https://zzmapi.zzmsgdsg.xyz/v1beta/models/{model}:generateContent` |
+
+<div class="zzm-tip">
+  <strong>为什么 Claude Code / Gemini CLI 的 Base URL 不写 <code>/v1</code>？</strong>因为这两个工具内部会自动拼接接口路径。填根域名，工具自己拼出 <code>/v1/messages</code>。Codex 不同，它的 Base URL 必须带 <code>/v1</code>，因为 OpenWebUI 生态约定如此。
+</div>
 
 认证方式统一：`Authorization: Bearer YOUR_KEY`
 
@@ -78,7 +84,12 @@ curl https://zzmapi.zzmsgdsg.xyz/v1/responses \
 
 ## Messages API（Anthropic 协议）
 
-Claude Code 使用 Anthropic 原生 Messages API，地址不带 `/v1`：
+ZZM API 的 Anthropic 协议端点为 `/v1/messages`。但 Claude Code 配置里填 **根域名**，因为 Claude Code 会自动拼接路径。
+
+| 场景 | 填什么 |
+| --- | --- |
+| Claude Code 配置 `ANTHROPIC_BASE_URL` | `https://zzmapi.zzmsgdsg.xyz`（工具自己拼 `/v1/messages`） |
+| 直接 curl 调用 API | `https://zzmapi.zzmsgdsg.xyz/v1/messages` |
 
 ```bash
 curl https://zzmapi.zzmsgdsg.xyz/v1/messages \
