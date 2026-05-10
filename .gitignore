@@ -7,3 +7,5 @@ docs/.vitepress/dist
 !.env.example
 .DS_Store
 Thumbs.db
+# Codex 临时文件
+.codex-tmp

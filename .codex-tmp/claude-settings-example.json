@@ -1,9 +1,0 @@
-{
-  "env": {
-    "ANTHROPIC_AUTH_TOKEN": "",
-    "ANTHROPIC_BASE_URL": "https://zzmapi.zzmsgdsg.xyz",
-    "ANTHROPIC_MODEL": "claude-sonnet-4-6",
-    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
-  },
-  "includeCoAuthoredBy": false
-}
