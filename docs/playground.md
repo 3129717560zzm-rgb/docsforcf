@@ -21,7 +21,7 @@ description: 在配置软件之前，先用操练场确认令牌和模型可用�
 3. 发一句短问题，比如「只回复 OK」。
 4. 能回 → 令牌没问题，去查软件配置。不能回 → 查令牌、余额、模型权限。
 
-<!-- SCREENSHOT: 操练场测试成功页面 -->
+![ZZM API 操练场测试成功页面](/screenshots/zzm-playground-success.png)
 
 <div class="zzm-tip">
   <strong>操练场能回，软件不能回</strong>：优先查地址、模型名、Key 字段、兼容模式。

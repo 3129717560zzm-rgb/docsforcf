@@ -19,7 +19,7 @@ Claude Code 支持 CLI 和 VS Code 插件。两种配置方式：**CC Switch（�
 
 打开 CC Switch → 新增 Claude Code Provider → 填表 → 启用。详细步骤见 [CC Switch 配置](/coding-agents/cc-switch#配-claude-code)。
 
-<!-- SCREENSHOT: CC Switch Claude Code 配置完成效果 -->
+![CC Switch Claude Code 配置完成效果](/screenshots/cc-switch-claude-provider.png)
 
 ## 方式二：手动配置
 
@@ -45,7 +45,7 @@ winget install Anthropic.ClaudeCode
 claude --version
 ```
 
-<!-- SCREENSHOT: 终端 claude --version 输出 -->
+![终端 claude --version 输出](/screenshots/terminal-claude-version.png)
 
 ### 创建令牌
 
@@ -82,7 +82,7 @@ claude --version
 Claude 模型选项：`claude-opus-4-7`、`claude-sonnet-4-6`、`claude-haiku-4-5-20251001`。具体以控制台可用列表为准。
 :::
 
-<!-- SCREENSHOT: settings.json 文件编辑器截图 -->
+![settings.json 文件编辑器截图](/screenshots/claude-settings-editor.png)
 
 保存后运行：
 
@@ -99,7 +99,7 @@ claude
 3. 插件自动读取 `~/.claude/settings.json`。
 4. 没生效就重启 VS Code，或从终端 `code .` 打开项目。
 
-<!-- SCREENSHOT: VS Code Claude Code 插件侧边栏 -->
+![VS Code Claude Code 插件侧边栏](/screenshots/vscode-claude-sidebar.png)
 
 ## 常见坑
 

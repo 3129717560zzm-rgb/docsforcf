@@ -19,7 +19,7 @@ Gemini CLI 是 Google 官方的命令行编码工具。两种配置方式：**CC
 
 打开 CC Switch → 新增 Gemini CLI Provider → 填表 → 启用。详细步骤见 [CC Switch 配置](/coding-agents/cc-switch#配-gemini-cli)。
 
-<!-- SCREENSHOT: CC Switch Gemini CLI 配置完成效果 -->
+![CC Switch Gemini CLI 配置完成效果](/screenshots/cc-switch-gemini-provider.png)
 
 ## 方式二：手动配置
 
@@ -51,7 +51,7 @@ GEMINI_MODEL=gemini-2.5-pro
 Gemini 模型选项：`gemini-3.1-pro-preview`、`gemini-3-pro-preview`、`gemini-3-flash-preview`、`gemini-2.5-pro`、`gemini-2.5-flash`、`gemini-2.5-flash-nothinking`。具体以控制台可用列表为准。
 :::
 
-<!-- SCREENSHOT: .env 文件编辑器截图 -->
+![.env 文件编辑器截图](/screenshots/gemini-env-editor.png)
 
 保存后运行 Gemini CLI，发一句「只回复 OK」测试。
 

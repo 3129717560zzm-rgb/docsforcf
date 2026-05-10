@@ -19,7 +19,7 @@ description: 控制台入口、创建令牌、充值、调用日志和售后群�
 
 用户名注册登录。邮箱注册后续开放。
 
-<!-- SCREENSHOT: 注册/登录页面 -->
+![ZZM API 注册登录页面](/screenshots/zzm-login.png)
 
 ## 充值
 
@@ -36,7 +36,7 @@ description: 控制台入口、创建令牌、充值、调用日志和售后群�
 
 不知道怎么选分组看 [令牌分组](/groups)。每个软件单独建 Key，方便后续停用和排查。
 
-<!-- SCREENSHOT: 令牌管理页面 -->
+![ZZM API 令牌管理页面](/screenshots/zzm-token-management.png)
 
 ## 调用日志
 
@@ -58,4 +58,4 @@ description: 控制台入口、创建令牌、充值、调用日志和售后群�
 - 控制台调用日志时间
 - **不要发完整 API Key**（只发前后几位）
 
-<!-- SCREENSHOT: QQ 群二维码或加群页面 -->
+加群入口：[QQ 群 1098412601](https://qm.qq.com/q/wKACZYaaTS)。
