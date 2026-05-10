@@ -1,60 +1,79 @@
 ---
 title: Cherry Studio 配置
-description: 在 Cherry Studio 里配置 ZZM API 聊天模型和 gpt-image-2 生图模型。
+description: Cherry Studio 聊天客户端接入 ZZM API，支持对话模型和 gpt-image-2 生图。
 ---
 
 # Cherry Studio 配置
 
-Cherry Studio 里最容易填错的是地址。ZZM API 默认填带 `/v1` 的地址。
+Cherry Studio 是桌面端 AI 聊天客户端。支持对话和生图，两个功能分开配置。
 
-## 官方链接
+<!-- SCREENSHOT: Cherry Studio 主界面 -->
 
-<div class="zzm-official-links">
-  <a href="https://docs.cherry-ai.com/docs/en-us/pre-basic/settings/providers">Cherry Studio 服务商设置</a>
-  <a href="https://docs.cherry-ai.com/docs/en-us/pre-basic/providers/zi-ding-yi-fu-wu-shang">Cherry Studio 自定义服务商</a>
-</div>
+## 下载安装
 
-## 聊天模型
+| 系统 | 方式 |
+| --- | --- |
+| Windows | [官网下载](https://cherry-ai.com/download) `.exe`，或 `winget install kangfenmao.CherryStudio` |
+| macOS | [官网下载](https://cherry-ai.com/download) `.dmg`，或 `brew install --cask cherry-studio` |
+| Linux | `.AppImage` 或 `.deb` |
 
-聊天模型用这个地址：
+## 配对话模型
 
-```text
-https://zzmapi.zzmsgdsg.xyz/v1
-```
+1. 打开 Cherry Studio 设置 → 模型服务商。
+2. 新增一个服务商，类型选 **OpenAI / OpenAI Compatible**。
+3. 照着填：
 
-1. 打开 Cherry Studio 设置。
-2. 进入模型服务商或 Providers。
-3. 新增自定义服务商。
-4. 类型选 OpenAI 或 OpenAI Compatible。
-5. API Key 填 `YOUR_ZZM_API_KEY`。
-6. API 地址填 `https://zzmapi.zzmsgdsg.xyz/v1`。
-7. 手动添加模型，例如 `gpt-5.4`、`gpt-5.4-mini`、`gpt-5.3-codex`。
-8. 保存。
-9. 发一句短消息测试。
-
-<div class="zzm-note-line">
-如果你的 Cherry Studio 版本明确写着“会自动拼接 `/v1`”，就填 `https://zzmapi.zzmsgdsg.xyz`。否则填 `https://zzmapi.zzmsgdsg.xyz/v1`。
-</div>
-
-## 生图模型
-
-单独建一个服务商，名字叫 `ZZM Image`。别和聊天模型混在一起。
+<div class="zzm-config-table">
 
 | 字段 | 填写 |
 | --- | --- |
-| 服务商类型 | OpenAI / OpenAI Compatible |
-| API Key | `YOUR_IMAGE_API_KEY` |
+| 服务商名称 | `ZZM API` |
+| API Key | 你的令牌 Key |
 | API 地址 | `https://zzmapi.zzmsgdsg.xyz/v1` |
-| 模型 | `gpt-image-2` |
+| 模型 | 手动添加，如 `gpt-5.4`、`gpt-5.4-mini` |
 
-保存后进绘图入口，选择 `gpt-image-2`。第一次别写复杂提示词，先确认能出图。
+</div>
 
-## 先去操练场
+<!-- SCREENSHOT: Cherry Studio 新增服务商配置页面 -->
 
-打开 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground)，选择同一个模型测试：
+<div class="zzm-tip">
+  <strong>地址注意</strong>：大部分 Cherry Studio 版本填 <code>https://zzmapi.zzmsgdsg.xyz/v1</code>。如果你的版本提示"会自动拼接 /v1"，就改为只填根域名 <code>https://zzmapi.zzmsgdsg.xyz</code>。
+</div>
 
-- 聊天：`gpt-5.4` 或 `gpt-5.4-mini`
-- 代码：`gpt-5.3-codex`
-- 生图：`gpt-image-2`
+4. 保存，新增一个对话，选择刚添加的模型，发消息测试。
 
-操练场能回，Cherry Studio 不能回，就查地址、模型名、服务商类型。
+<!-- SCREENSHOT: Cherry Studio 对话成功效果 -->
+
+## 配生图模型
+
+生图单独建一个服务商，不和聊天混用：
+
+<div class="zzm-config-table">
+
+| 字段 | 填写 |
+| --- | --- |
+| 服务商名称 | `ZZM Image` |
+| API Key | 你的令牌 Key |
+| API 地址 | `https://zzmapi.zzmsgdsg.xyz/v1` |
+| 模型 | 手动添加 `gpt-image-2` |
+
+</div>
+
+保存后进 Cherry Studio 绘图入口，选 `gpt-image-2`，第一次用短提示词测试。
+
+::: tip 生图网站
+ZZM API 还有一个独立的生图网站：[image.zzmsgdsg.xyz](https://image.zzmsgdsg.xyz)，可以直接在网页上生图，不用配客户端。
+:::
+
+## 先测再配
+
+打开 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型——操练场能回、Cherry Studio 不能回，查地址和模型名。
+
+## 常见坑
+
+| 现象 | 处理 |
+| --- | --- |
+| 模型列表为空 | 手动添加模型，Cherry Studio 不会自动拉取 |
+| 401 | Key 填错或粘贴时多了空格 |
+| 地址不通 | 确认选了 OpenAI Compatible 类型，地址带了 `/v1` |
+| 生图不显示 | 检查是否单独建了 Image 服务商，模型名是否拼成 `gpt-image-2` |

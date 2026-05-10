@@ -1,69 +1,61 @@
 ---
 title: 账号与社群
-description: 控制台入口、创建令牌、充值、QQ群、微信群和售后说明。
+description: 控制台入口、创建令牌、充值、调用日志和售后群。
 ---
 
 # 账号与社群
 
-账号、令牌、充值、社群入口都在这里。活动、倍率、额度看控制台和群公告。
+账号、令牌、充值、日志入口汇总。
 
 ## 账号入口
 
-<div class="zzm-link-list">
-  <a href="https://zzmapi.zzmsgdsg.xyz">控制台首页</a>
-  <a href="https://zzmapi.zzmsgdsg.xyz/login">登录控制台</a>
-  <a href="https://zzmapi.zzmsgdsg.xyz/console/token">创建令牌</a>
-  <a href="https://zzmapi.zzmsgdsg.xyz/console/playground">操练场</a>
-  <a href="https://zzmapi.zzmsgdsg.xyz/console/topup">充值与余额</a>
-  <a href="https://qm.qq.com/q/wKACZYaaTS">zzmapi 付费群</a>
-</div>
+- [控制台首页](https://zzmapi.zzmsgdsg.xyz)
+- [创建令牌](https://zzmapi.zzmsgdsg.xyz/console/token)
+- [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground)
+- [充值与余额](https://zzmapi.zzmsgdsg.xyz/console/topup)
+- [模型与分组](https://zzmapi.zzmsgdsg.xyz/pricing)
+
+## 注册
+
+用户名注册登录。邮箱注册后续开放。
+
+<!-- SCREENSHOT: 注册/登录页面 -->
+
+## 充值
+
+两种方式：
+
+- **支付宝**：控制台内直接充值。
+- **群主转账**：联系群主转账，免手续费。加 QQ 群 **1098412601**，进群答案写"找群主充值"或填写订单号。
+
+充完去"钱包管理"确认余额。充值没到账就带支付截图进群。
 
 ## 创建令牌
 
-进入 [创建令牌](https://zzmapi.zzmsgdsg.xyz/console/token)，每个软件单独建 Key。完整 Key 不要发给别人，提问只给前后几位。
+[创建令牌](https://zzmapi.zzmsgdsg.xyz/console/token) → 起名 → 选分组 → 复制 Key。
 
-创建后先到 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 测试模型，再配置第三方软件。
+不知道怎么选分组看 [令牌分组](/groups)。每个软件单独建 Key，方便后续停用和排查。
 
-## 充值与余额
-
-进入 [充值页面](https://zzmapi.zzmsgdsg.xyz/console/topup)，按控制台提示充值。充值后看余额，再用短请求测一次。
-
-余额没变，带这些信息联系售后：
-
-- 账号 ID 或登录邮箱。
-- 支付时间和金额。
-- 控制台订单截图。
-- 不要发送完整 API Key。
+<!-- SCREENSHOT: 令牌管理页面 -->
 
 ## 调用日志
 
-请求失败先看控制台调用日志。日志能看到：
+请求失败先看控制台调用日志。日志能看：
 
-- 请求是否到达 ZZM API。
-- 使用了哪个模型。
-- 是否余额不足或模型无权限。
-- 上游是否返回错误。
-
-## 邀请返利
-
-控制台有邀请链接就用自己的专属链接。返利比例、到账时间和抵扣范围看控制台与群公告。
-
-## 学生折扣
-
-学生认证、长期折扣、活动福利看群公告。这里不写固定折扣，避免过期。
+- 请求是否到达 ZZM API
+- 用了哪个模型、哪个分组
+- 是否余额不足或模型无权限
+- 上游是否返回错误
 
 ## 售后群
 
-QQ群入口：[zzmapi 付费群](https://qm.qq.com/q/wKACZYaaTS)
+**QQ 群：1098412601**
 
-<div class="zzm-qr-wrap">
-  <div>
-    <h2>微信群二维码</h2>
-    <p>扫码加入微信群。提问时请带软件名称、模型名、报错截图和控制台日志时间，不要发送完整 API Key。</p>
-  </div>
-  <img class="zzm-qr" src="/wechat-group.png" alt="zzmapi 微信群二维码" />
-</div>
+进群提问请带：
+- 软件名称和版本
+- 模型名
+- 报错截图
+- 控制台调用日志时间
+- **不要发完整 API Key**（只发前后几位）
 
-## 提问时请带截图
-
-带软件名称、模型名、报错截图、控制台调用日志时间。完整 API Key 不要发。
+<!-- SCREENSHOT: QQ 群二维码或加群页面 -->

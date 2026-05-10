@@ -1,72 +1,60 @@
 ---
 title: FAQ
-description: ZZM API、Codex、Claude Code、Cherry Studio 和生图常见问题。
+description: ZZM API 使用常见问题。
 ---
 
 # FAQ
 
 ## 先去哪里验证模型能不能用
 
-先打开 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground)。操练场能回，再去配软件。
+打开 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground)。操练场能回，再去配软件。
 
-## API Key 在哪里创建
+## Key 在哪里创建
 
-进 [创建令牌](https://zzmapi.zzmsgdsg.xyz/console/token)。完整 Key 不要发给别人，提问只给前后几位。
+[创建令牌](https://zzmapi.zzmsgdsg.xyz/console/token)。选择分组、起名、创建。Key 只显示一次，复制保存好。
 
-## 401 Invalid token
-
-常见原因：
-
-- API Key 复制错了。
-- Key 已删除、禁用或过期。
-- Authorization 格式不对。
-- 客户端把 Key 填到了错误字段。
-
-正确格式：
-
-```text
-Authorization: Bearer YOUR_ZZM_API_KEY
-```
-
-大多数客户端只需要填 Key 本身，不要手动加 `Bearer`。
-
-## Codex 应该填哪个地址
-
-Codex CLI、Codex VS Code 插件、OpenAI SDK 都填：
+## Codex 填哪个地址
 
 ```text
 https://zzmapi.zzmsgdsg.xyz/v1
 ```
 
-用 [CC Switch](/coding-agents/cc-switch) 配最省事。
+带 `/v1`。Codex CLI 和 Codex 插件都用这个地址。
 
-## Claude Code 应该填哪个地址
-
-Claude Code CLI 和 Claude Code VS Code 插件都填根域名：
+## Claude Code 填哪个地址
 
 ```text
 https://zzmapi.zzmsgdsg.xyz
 ```
 
-不要加 `/v1`。
+不要加 `/v1`。加了就连不上。
 
-## VS Code 插件怎么配置
+## Gemini CLI 填哪个地址
 
-先看 [VS Code 插件](/coding-agents/vscode-plugins)。记住：
+```text
+https://zzmapi.zzmsgdsg.xyz
+```
 
-- Codex 插件读取 Codex 配置，地址填 `https://zzmapi.zzmsgdsg.xyz/v1`。
-- Claude Code 插件共享 Claude Code 配置，地址填 `https://zzmapi.zzmsgdsg.xyz`。
-- 插件没生效时重启 VS Code，或运行 `Developer: Reload Window`。
+和 Claude Code 一样，填根域名。
 
-## Cherry Studio 应该填哪个地址
-
-OpenAI Base URL 默认填：
+## Cherry Studio 填哪个地址
 
 ```text
 https://zzmapi.zzmsgdsg.xyz/v1
 ```
 
-如果当前版本提示它会自动拼接 `/v1`，则填写根域名 `https://zzmapi.zzmsgdsg.xyz`。
+如果你的 Cherry Studio 版本提示"会自动拼接 /v1"，就填根域名。
+
+## CC Switch 是什么
+
+图形化的供应商管理器。给 Claude Code、Codex、Gemini CLI 统一配置 API 地址和 Key。去 [CC Switch 配置](/coding-agents/cc-switch) 看详情。
+
+## 401 Invalid token 怎么处理
+
+- Key 复制错了 → 重建令牌
+- Key 被删了 → 去令牌页确认
+- Key 填错字段了 → 确认填在 API Key / Bearer Token 字段
+- 格式不对 → 大多数客户端只需要填 Key 本身，不要加 `Bearer` 前缀
 
 ## 403 无权限
 
@@ -74,63 +62,20 @@ https://zzmapi.zzmsgdsg.xyz/v1
 
 ## 429 请求过多
 
-说明触发频率或并发限制。处理方式：
-
-- 降低并发。
-- 增加重试间隔。
-- 批量任务做队列。
-- 避免多个客户端共用同一个 Key 高并发请求。
-
-## 余额不足
-
-进 [充值页面](https://zzmapi.zzmsgdsg.xyz/console/topup) 看余额。充值后仍报错，就看订单和调用日志。
+降低并发、增加重试间隔、避免多个客户端共用一个 Key 高并发。
 
 ## model not found
 
-常见原因：
-
-- 模型 ID 拼写错误。
-- 当前账号没有该模型权限。
-- 客户端保存了旧模型名。
-- 该模型临时下架或维护。
-
-复制控制台里的模型 ID，不要凭记忆手打。
+模型名拼错了、账号没权限、客户端缓存了旧模型名。去控制台复制模型 ID，不要凭记忆手打。
 
 ## 请求超时
 
-先看这几个点：
+输入太长、输出太长、上游繁忙、代理异常。先用短问题测试，短请求正常再加长。
 
-- 输入上下文太长。
-- 输出太长。
-- 上游模型繁忙。
-- 本地网络或客户端代理异常。
+## 能在网页前端直接调用吗
 
-先用短问题测试。短请求正常，再增加上下文和输出长度。
+不建议。浏览器会暴露 Key。正式项目把 Key 放后端，前端调自己后端。
 
-## 客户端连不上
+## 怎么联系群主
 
-检查顺序：
-
-1. Base URL 是否为 `https://zzmapi.zzmsgdsg.xyz/v1`。
-2. API Key 是否填在正确字段。
-3. 模型名是否与控制台一致。
-4. 客户端是否支持自定义 OpenAI-compatible 地址。
-5. curl 是否能成功请求同一个 Key 和模型。
-
-## 可以在网页前端直接调用吗
-
-不建议。浏览器会暴露 API Key。正式项目把 Key 放后端，前端请求自己的后端接口。
-
-## 怎么联系售后
-
-QQ群入口：[zzmapi 付费群](https://qm.qq.com/q/wKACZYaaTS)
-
-<div class="zzm-qr-wrap">
-  <div>
-    <h2>微信群二维码</h2>
-    <p>扫码加入微信群。提问时请带软件名称、模型名、报错截图和控制台日志时间，不要发送完整 API Key。</p>
-  </div>
-  <img class="zzm-qr" src="/wechat-group.png" alt="zzmapi 微信群二维码" />
-</div>
-
-提问带截图和控制台日志时间。完整 API Key 不要发。
+QQ 群 **1098412601**。提问带截图和控制台日志时间，完整 Key 不要发。

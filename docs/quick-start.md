@@ -1,72 +1,79 @@
 ---
-title: 先跑 Key
-description: 创建令牌，去操练场试模型，再配置软件。
+title: 快速开始
+description: 注册账号、充值、创建令牌、操练场测试，五分钟跑通。
 ---
 
-# 先跑 Key
+# 快速开始
 
-先别急着开 Codex、Claude Code 或 Cherry Studio。Key 没跑通，软件里怎么改都白搭。
+软件还没配好之前，先在控制台确认三件事：**账号能用、令牌有效、模型能回**。
 
-## 1. 登录
+## 1. 注册账号
 
-打开 [ZZM API 控制台](https://zzmapi.zzmsgdsg.xyz)。有账号就登录，没有就注册。
+打开 [ZZM API 控制台](https://zzmapi.zzmsgdsg.xyz)，用户名注册登录。邮箱注册后续开放。
 
-登录后看三件事：
+<!-- SCREENSHOT: 注册/登录页面 -->
 
-- 余额是否可用。
-- 能不能打开创建令牌页面。
-- 能不能打开操练场。
+## 2. 充值
 
-## 2. 创建令牌
+支持两种方式：
 
-进入 [创建令牌](https://zzmapi.zzmsgdsg.xyz/console/token)，新建一个令牌。
+- **支付宝**：控制台内直接充值。
+- **群主转账**：联系群主转账，免手续费。加 QQ 群 **1098412601**，进群答案写"找群主充值"或填写订单号。
 
-<div class="zzm-note-line">
-Key 只给自己用。不要发群里，不要放进公开截图，不要写进公开仓库。
+充完去"钱包管理"确认余额到账。
+
+<div class="zzm-tip">
+  <strong>提示</strong>：建议先小额充值测试，确认模型可用再追加。充值过程中遇到问题直接在群里问，带支付截图。
 </div>
 
-一个软件用一个令牌。Codex 一个，Claude Code 一个，Cherry Studio 一个。以后不用哪个，就删哪个。
+## 3. 创建令牌
 
-## 3. 操练场测试
+进入 [创建令牌](https://zzmapi.zzmsgdsg.xyz/console/token)：
 
-打开 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground)，选择模型，发一句短问题。
+1. 给令牌起个名字，方便区分（比如 "Claude Code 专用"、"Codex 专用"）。
+2. 选择一个分组。不知道怎么选 → 看 [令牌分组](/groups)。
+3. 复制 Key 并保存好。**Key 只显示一次。**
 
-这里能回，账号、余额、模型权限基本就没问题。软件还报错，就查软件配置。
+<div class="zzm-tip">
+  <strong>安全提醒</strong>：Key 只给自己用。不要发群里、不要截图发出去、不要写进公开仓库。一个工具一个 Key，不用了就删。
+</div>
 
-## 4. 地址照表填
+<!-- SCREENSHOT: 创建令牌页面，标注分组下拉框和复制按钮 -->
 
-| 软件 | 地址 |
+## 4. 操练场测试
+
+打开 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground)，选择你打算用的模型，发一句短问题，比如「只回复 OK」。
+
+能正常返回，说明令牌没问题。接下来配软件。
+
+<!-- SCREENSHOT: 操练场测试成功 -->
+
+## 5. 填地址
+
+不同工具地址不一样：
+
+| 工具 | 地址 |
 | --- | --- |
-| Codex / Codex 插件 / OpenAI SDK | `https://zzmapi.zzmsgdsg.xyz/v1` |
-| Claude Code / Claude Code 插件 | `https://zzmapi.zzmsgdsg.xyz` |
-| Cherry Studio 聊天 | `https://zzmapi.zzmsgdsg.xyz/v1` |
-| gpt-image-2 生图 | `https://zzmapi.zzmsgdsg.xyz/v1` |
+| Codex / Cherry Studio / OpenAI SDK | `https://zzmapi.zzmsgdsg.xyz/v1` |
+| Claude Code / Gemini CLI | `https://zzmapi.zzmsgdsg.xyz` |
 
-记住这句：Codex 加 `/v1`，Claude Code 不加 `/v1`。
-
-## 5. 命令行测试
-
-会用命令行就跑这个。不会用可以跳过。
+## 命令行快速验证
 
 ```bash
 curl https://zzmapi.zzmsgdsg.xyz/v1/chat/completions \
-  -H "Authorization: Bearer YOUR_ZZM_API_KEY" \
+  -H "Authorization: Bearer YOUR_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "model": "gpt-5.4-mini",
-    "messages": [
-      { "role": "user", "content": "只回复 OK" }
-    ]
+    "messages": [{ "role": "user", "content": "只回复 OK" }]
   }'
 ```
 
-能返回 JSON 就通了。
+返回 JSON 就通了。
 
-## 接着看
+## 下一步
 
-- VS Code 插件：[插件配置](/coding-agents/vscode-plugins)
-- Codex：[Codex](/coding-agents/codex)
-- Claude Code：[Claude Code](/coding-agents/claude-code)
-- Cherry Studio：[Cherry Studio](/clients/cherry-studio)
-- 图片生成：[gpt-image-2](/image-generation)
-- 报错：[错误快速筛查](/errors)
+- 了解你的工具适合哪个分组 → [令牌分组](/groups)
+- 配 Claude Code / Codex / Gemini → [编码工具](/coding-agents/)
+- 配 Cherry Studio 聊天 → [Cherry Studio](/clients/cherry-studio)
+- 配生图 → [gpt-image-2 生图](/image-generation)

@@ -1,115 +1,100 @@
 ---
-title: CC Switch
-description: 用 CC Switch 配置编码智能体 Codex 和编码智能体 Claude Code。
+title: CC Switch 配置
+description: 用 CC Switch 统一管理 Claude Code、Codex、Gemini CLI 的 API 供应商。
 ---
 
-# CC Switch
+# CC Switch 配置
 
-CC Switch 是配置器。它给 Codex 和 Claude Code 切 API 供应商。
+CC Switch 是图形化的供应商管理器，可以给 Claude Code、Codex、Gemini CLI 统一配置 API 地址和 Key。不用手动改文件，填表就能配。
 
-它配置的是：
+<!-- SCREENSHOT: CC Switch 主界面概览 -->
 
-- Codex CLI
-- Codex VS Code 插件
-- Claude Code CLI
-- Claude Code VS Code 插件
+## 下载安装
 
-<div class="zzm-note-line">
-别把 CC Switch 当聊天软件。配完以后，还是打开 Codex 或 Claude Code 干活。
-</div>
+去 [CC Switch GitHub Releases](https://github.com/farion1231/cc-switch/releases) 下载最新版：
 
-## 官方链接
+| 系统 | 下载 |
+| --- | --- |
+| Windows | `.msi` 安装包 或 `-Portable.zip` 便携版 |
+| macOS | `.dmg` 安装包，或 `brew install --cask cc-switch` |
+| Linux | `.deb` / `.rpm` / `.AppImage` |
 
-<div class="zzm-official-links">
-  <a href="https://github.com/farion1231/cc-switch">CC Switch GitHub</a>
-  <a href="https://github.com/farion1231/cc-switch/releases">CC Switch Releases 下载</a>
-</div>
+<!-- SCREENSHOT: CC Switch 下载页面 -->
 
-## 下载
+## 添加 ZZM API 供应商
 
-- Windows：去 Releases 下 `.msi` 或 portable 压缩包。
-- macOS：去 Releases 下 macOS 包。
-- Linux：去 Releases 下 `.deb`、`.rpm` 或 AppImage。
+打开 CC Switch，找到 Provider 或供应商管理。
 
-装好后打开 CC Switch，找到 Provider 或供应商配置。
+### 配 Codex
 
-## 配 Codex
+新增 Provider，照着填：
 
-给 Codex CLI / Codex 插件用。照着填：
+<div class="zzm-config-table">
 
 | 字段 | 填写 |
 | --- | --- |
 | 供应商名称 | `ZZM API Codex` |
-| API Key | `YOUR_ZZM_API_KEY` |
+| API Key | 你的令牌 Key |
 | API 请求地址 | `https://zzmapi.zzmsgdsg.xyz/v1` |
-| 模型名称 | `gpt-5.4` |
+| 模型名称 | 控制台可用模型，如 `gpt-5.4` |
 | 上下文窗口 | `950000` |
 | 压缩阈值 | `900000` |
 
-`auth.json`：
+</div>
 
-```json
-{
-  "OPENAI_API_KEY": "YOUR_ZZM_API_KEY"
-}
-```
+<!-- SCREENSHOT: CC Switch Codex 配置界面 -->
 
-`config.toml`：
+### 配 Claude Code
 
-```toml
-model = "gpt-5.4"
-model_provider = "zzmapi"
-model_context_window = 950000
-model_auto_compact_token_limit = 900000
+新增 Provider，照着填：
 
-[model_providers.zzmapi]
-name = "ZZM API"
-base_url = "https://zzmapi.zzmsgdsg.xyz/v1"
-wire_api = "responses"
-env_key = "OPENAI_API_KEY"
-requires_openai_auth = true
-```
-
-Codex 走 Responses API。这里必须带 `/v1`。
-
-## 配 Claude Code
-
-给 Claude Code CLI / Claude Code 插件用。照着填：
+<div class="zzm-config-table">
 
 | 字段 | 填写 |
 | --- | --- |
 | 供应商名称 | `ZZM API Claude Code` |
-| API Key | `YOUR_ZZM_API_KEY` |
+| API Key | 你的令牌 Key |
 | 请求地址 | `https://zzmapi.zzmsgdsg.xyz` |
-| 模型名称 | `gpt-5.4` |
+| 模型名称 | 控制台可用模型，如 `claude-sonnet-4-6` |
 | 上下文窗口 | `950000` |
 
-配置 JSON：
+</div>
 
-```json
-{
-  "env": {
-    "ANTHROPIC_API_KEY": "YOUR_ZZM_API_KEY",
-    "ANTHROPIC_BASE_URL": "https://zzmapi.zzmsgdsg.xyz",
-    "ANTHROPIC_MODEL": "gpt-5.4",
-    "CLAUDE_CODE_MAX_CONTEXT_TOKENS": "950000",
-    "DISABLE_COMPACT": "1"
-  },
-  "includeCoAuthoredBy": false
-}
+<div class="zzm-tip">
+  <strong>注意</strong>：Claude Code 地址不要加 <code>/v1</code>。Codex 必须加 <code>/v1</code>。两个地址不一样。
+</div>
+
+<!-- SCREENSHOT: CC Switch Claude Code 配置界面 -->
+
+### 配 Gemini CLI
+
+新增 Provider，照着填：
+
+<div class="zzm-config-table">
+
+| 字段 | 填写 |
+| --- | --- |
+| 供应商名称 | `ZZM API Gemini` |
+| API Key | 你的令牌 Key |
+| 请求地址 | `https://zzmapi.zzmsgdsg.xyz` |
+| 模型名称 | 控制台可用模型，如 `gemini-2.5-pro` |
+
+</div>
+
+## 启用 & 测试
+
+1. 在 CC Switch 主界面，把对应的 Provider 设为启用。
+2. 重启 Claude Code、Codex 或 VS Code。
+3. 发一句短问题测试，比如「只回复 OK」。
+
+<!-- SCREENSHOT: CC Switch 启用 Provider 的状态 -->
+
+不通就去 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型。
+
+## CC Switch CLI（命令行版）
+
+除了桌面版，还有一个命令行版本，适合服务器或无 GUI 环境：[CC Switch CLI](https://github.com/SaladDay/cc-switch-cli/releases)
+
+```bash
+curl -fsSL https://github.com/SaladDay/cc-switch-cli/releases/latest/download/install.sh | bash
 ```
-
-这里不要加 `/v1`。填错了就会连不上。普通使用也可以先不填最后两项上下文字段。
-
-## 配完怎么测
-
-1. 在 CC Switch 启用对应 Provider。
-2. 重启 Codex、Claude Code 或 VS Code。
-3. 发一句短问题。
-4. 不通就先去 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型。
-
-## 插件用户
-
-- Codex 插件：启用 Codex Provider，再打开 Codex 插件。
-- Claude Code 插件：启用 Claude Code Provider，再打开 Claude Code 插件。
-- 插件不生效：重启 VS Code，或从终端用 `code .` 打开项目。
