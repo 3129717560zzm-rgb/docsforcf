@@ -21,6 +21,7 @@ description: 按同行站结构整理的 ZZM API 教程入口。
 - [CC-Switch 配置教程](/guide/cc-switch)
 - [Claude Code 配置教程](/guide/claude-code)
 - [Codex 配置教程](/guide/codex)
+- [Gemini CLI 配置教程](/guide/gemini-cli)
 
 ## 疑难解答
 
@@ -30,10 +31,13 @@ description: 按同行站结构整理的 ZZM API 教程入口。
 - [网络与连接类问题](/guide/troubleshooting/network)
 - [请求错误类问题](/guide/troubleshooting/request-error)
 - [权限与分组类问题](/guide/troubleshooting/permission)
+- [缓存与计费类问题](/guide/troubleshooting/cache-billing)
+- [claude-mem 插件问题](/guide/troubleshooting/claude-mem)
 - [外接与兼容类问题](/guide/troubleshooting/integration)
 - [Codex CLI 专项问题](/guide/troubleshooting/codex)
+- [OpenClaw 专项问题](/guide/troubleshooting/openclaw)
 - [CC Switch 与配置管理](/guide/troubleshooting/cc-switch)
-- [余额与计费类问题](/guide/troubleshooting/cache-billing)
+- [进阶配置与效率优化](/guide/troubleshooting/advanced)
 
 ## 先记住这两个地址
 

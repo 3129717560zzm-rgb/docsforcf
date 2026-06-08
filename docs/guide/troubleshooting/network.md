@@ -46,8 +46,3 @@ curl https://zzmapi.zzmsgdsg.xyz/v1/models \
 - 先不改 Key
 - 先短暂关闭代理试一次
 - 再看是代理问题还是地址问题
-
-## 上一页 / 下一页
-
-- 上一页：[认证与 API Key 类问题](/guide/troubleshooting/auth)
-- 下一页：[请求错误类问题](/guide/troubleshooting/request-error)

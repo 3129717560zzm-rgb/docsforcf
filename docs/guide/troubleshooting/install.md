@@ -49,8 +49,3 @@ git --version
 - [CC-Switch 配置教程](/guide/cc-switch)
 - [Claude Code 配置教程](/guide/claude-code)
 - [Codex 配置教程](/guide/codex)
-
-## 上一页 / 下一页
-
-- 上一页：[总览](/guide/troubleshooting/)
-- 下一页：[认证与 API Key 类问题](/guide/troubleshooting/auth)

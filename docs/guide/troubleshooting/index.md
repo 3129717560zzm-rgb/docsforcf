@@ -20,10 +20,13 @@ description: 按问题类型拆分的排查入口。
 - [网络与连接类问题](/guide/troubleshooting/network)
 - [请求错误类问题](/guide/troubleshooting/request-error)
 - [权限与分组类问题](/guide/troubleshooting/permission)
+- [缓存与计费类问题](/guide/troubleshooting/cache-billing)
+- [claude-mem 插件问题](/guide/troubleshooting/claude-mem)
 - [外接与兼容类问题](/guide/troubleshooting/integration)
 - [Codex CLI 专项问题](/guide/troubleshooting/codex)
+- [OpenClaw 专项问题](/guide/troubleshooting/openclaw)
 - [CC Switch 与配置管理](/guide/troubleshooting/cc-switch)
-- [余额与计费类问题](/guide/troubleshooting/cache-billing)
+- [进阶配置与效率优化](/guide/troubleshooting/advanced)
 
 ## 最常见的三个原因
 

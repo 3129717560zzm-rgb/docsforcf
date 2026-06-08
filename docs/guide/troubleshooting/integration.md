@@ -48,8 +48,3 @@ https://zzmapi.zzmsgdsg.xyz
 ## 还是不通
 
 先用操练场确认模型能回，再回头改工具。
-
-## 上一页 / 下一页
-
-- 上一页：[权限与分组类问题](/guide/troubleshooting/permission)
-- 下一页：[Codex CLI 专项问题](/guide/troubleshooting/codex)

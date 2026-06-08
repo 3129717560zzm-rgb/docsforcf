@@ -65,8 +65,3 @@ codex
 3. 执行 `Developer: Reload Window`
 
 ![VS Code Codex 插件侧边栏](/screenshots/vscode-codex-sidebar.png)
-
-## 上一页 / 下一页
-
-- 上一页：[外接与兼容类问题](/guide/troubleshooting/integration)
-- 下一页：[CC Switch 与配置管理](/guide/troubleshooting/cc-switch)

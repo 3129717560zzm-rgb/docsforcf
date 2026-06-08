@@ -50,8 +50,3 @@ QQ群：`1098412601`
 - 登录账号
 
 不要发完整 API Key。
-
-## 上一页 / 下一页
-
-- 上一页：[请求地址 / Key](/guide/api-key)
-- 下一页：[售后群](/guide/after-sales)

@@ -1,31 +1,31 @@
 ---
 layout: home
-title: ZZM API 文档
+title: ZZM API 配置指南
 titleTemplate: false
 hero:
-  name: ZZM API 文档
+  name: ZZM API
   text: 配置指南
-  tagline: 按教程顺序完成注册、创建 Key、确认地址，再接入 Claude Code、Codex、Gemini CLI 等工具。
+  tagline: 从注册到上手，按教程顺序完成 Key 创建、地址填写、工具接入和常见报错排查。
   actions:
     - theme: brand
       text: 开始使用
-      link: /quick-start
+      link: /guide/register
     - theme: alt
       text: 疑难解答
-      link: /errors
+      link: /guide/troubleshooting/
 features:
   - icon: 📝
     title: 注册与充值
-    details: 账号注册、创建令牌、选择分组、操练场测试，先把基础步骤走通。
-    link: /quick-start
+    details: 账号注册、请求地址、令牌创建、充值续费和操练场测试，都从入门教程开始。
+    link: /guide/register
   - icon: ⚙️
     title: 工具配置
-    details: CC-Switch、Claude Code、Codex、Gemini CLI、VS Code 插件配置入口都放在教程里。
-    link: /coding-agents/
+    details: Node.js 与 Git、CC-Switch、Claude Code、Codex、Gemini CLI 全部按工具分开写。
+    link: /guide/nodejs-git
   - icon: 🛠️
     title: 疑难解答
-    details: 地址、Key、模型、权限、连接失败等常见问题先从这里查。
-    link: /errors
+    details: 401、403、429、地址填错、分组不匹配、Codex 不读配置，先到这里查。
+    link: /guide/troubleshooting/
 ---
 
 <div class="zzm-home-sections">
@@ -40,23 +40,31 @@ features:
 ## 教程入口
 
 <div class="zzm-home-links">
-  <a href="/quick-start">
-    <strong>注册与充值</strong>
-    <span>先完成账号注册、余额充值、创建令牌和基础测试。</span>
+  <a href="/guide/register">
+    <strong>注册账号</strong>
+    <span>先登录控制台，再确认令牌页、充值页和操练场入口都能打开。</span>
   </a>
-  <a href="/account/">
+  <a href="/guide/api-key">
     <strong>请求地址 / Key</strong>
-    <span>集中看控制台入口、令牌入口、模型分组和常用链接。</span>
+    <span>这里集中讲地址怎么填、Key 怎么建、分组怎么选、哪些地方最容易填错。</span>
   </a>
-  <a href="/coding-agents/">
+  <a href="/guide/nodejs-git">
     <strong>工具配置</strong>
-    <span>从地址速查进入各个工具配置页，按软件分别接入。</span>
+    <span>按顺序接入 Node.js、CC-Switch、Claude Code、Codex、Gemini CLI。</span>
   </a>
-  <a href="/errors">
+  <a href="/guide/troubleshooting/">
     <strong>疑难解答</strong>
     <span>遇到 401、403、429、地址填错、模型找不到时先查这里。</span>
   </a>
 </div>
+
+## 常用链接
+
+- [控制台首页](https://zzmapi.zzmsgdsg.xyz)
+- [创建令牌](https://zzmapi.zzmsgdsg.xyz/console/token)
+- [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground)
+- [模型与分组](https://zzmapi.zzmsgdsg.xyz/pricing)
+- [充值页](https://zzmapi.zzmsgdsg.xyz/console/topup)
 
 ## 资料说明
 
@@ -64,6 +72,6 @@ features:
 - 没补到的图片先用文字占位，不会杜撰截图文件。
 - 控制台、余额、模型和分组信息以 [ZZM API 控制台](https://zzmapi.zzmsgdsg.xyz) 实时显示为准。
 
-<div class="zzm-home-placeholder">[待补截图：首页横幅图 / 控制台概览图 / 教程封面图]</div>
+<div class="zzm-home-placeholder">[待补截图：首页总览图 / 控制台概览图 / 教程封面图]</div>
 
 </div>

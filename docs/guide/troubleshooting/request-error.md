@@ -58,8 +58,3 @@ description: 403、429、model not found、超时这类请求错误怎么查。
 - 截图
 
 QQ群：`1098412601`
-
-## 上一页 / 下一页
-
-- 上一页：[网络与连接类问题](/guide/troubleshooting/network)
-- 下一页：[权限与分组类问题](/guide/troubleshooting/permission)

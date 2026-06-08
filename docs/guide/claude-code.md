@@ -82,8 +82,3 @@ claude
 - Key 复制错了
 - 模型名手打错了
 - 操练场本身就调不通
-
-## 上一页 / 下一页
-
-- 上一页：[CC-Switch 配置教程](/guide/cc-switch)
-- 下一页：[Codex 配置教程](/guide/codex)

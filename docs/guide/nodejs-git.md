@@ -54,8 +54,4 @@ brew install git
 - 图形化管理： [CC-Switch 配置教程](/guide/cc-switch)
 - Claude： [Claude Code 配置教程](/guide/claude-code)
 - Codex： [Codex 配置教程](/guide/codex)
-
-## 上一页 / 下一页
-
-- 上一页：[商务合作](/guide/business)
-- 下一页：[CC-Switch 配置教程](/guide/cc-switch)
+- Gemini： [Gemini CLI 配置教程](/guide/gemini-cli)

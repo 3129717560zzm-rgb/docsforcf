@@ -39,8 +39,3 @@ description: 出问题后该怎么进群提问，带什么信息。
 - 401 / 403 / 429：先看 [请求错误类问题](/guide/troubleshooting/request-error)
 
 [待补截图：QQ 群入口页，需标注群号和进群备注]
-
-## 上一页 / 下一页
-
-- 上一页：[充值 / 续费](/guide/recharge)
-- 下一页：[商务合作](/guide/business)

@@ -6,7 +6,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'ZZM API 文档',
   description: 'ZZM API 教程文档，覆盖注册、Key、工具接入、常见问题与 API 调用说明。',
-  cleanUrls: true,
+  cleanUrls: false,
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }],
@@ -20,9 +20,12 @@ export default defineConfig({
     siteTitle: 'ZZM API',
     nav: [
       { text: '首页', link: '/' },
-      { text: '教程', link: '/quick-start' },
-      { text: '疑难解答', link: '/errors' },
-      { text: 'API', link: '/api/' }
+      { text: '教程', link: '/guide/register' },
+      { text: '疑难解答', link: '/guide/troubleshooting/' },
+      { text: 'API', link: apiOrigin }
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/3129717560zzm-rgb/docsforcf' }
     ],
     sidebar: {
       '/api/': [
@@ -34,33 +37,44 @@ export default defineConfig({
           ]
         }
       ],
-      '/': [
+      '/guide/': [
         {
           text: '入门',
           items: [
-            { text: '注册与充值', link: '/quick-start' },
-            { text: '请求地址 / Key', link: '/account/' },
-            { text: '模型与分组', link: '/groups' },
-            { text: '操练场测试', link: '/playground' }
+            { text: '注册账号', link: '/guide/register' },
+            { text: '请求地址 / Key', link: '/guide/api-key' },
+            { text: '充值 / 续费', link: '/guide/recharge' },
+            { text: '售后群', link: '/guide/after-sales' },
+            { text: '商务合作', link: '/guide/business' }
           ]
         },
         {
           text: '工具配置',
           items: [
-            { text: '总览与地址速查', link: '/coding-agents/' },
-            { text: 'CC-Switch 配置教程', link: '/coding-agents/cc-switch' },
-            { text: 'Claude Code 配置教程', link: '/coding-agents/claude-code' },
-            { text: 'Codex 配置教程', link: '/coding-agents/codex' },
-            { text: 'Gemini CLI 配置教程', link: '/coding-agents/gemini-cli' },
-            { text: 'VS Code 插件配置', link: '/coding-agents/vscode-plugins' },
-            { text: 'Cherry Studio 配置教程', link: '/clients/cherry-studio' }
+            { text: 'Node.js 与 Git 环境配置', link: '/guide/nodejs-git' },
+            { text: 'CC-Switch 配置教程', link: '/guide/cc-switch' },
+            { text: 'Claude Code 配置教程', link: '/guide/claude-code' },
+            { text: 'Codex 配置教程', link: '/guide/codex' },
+            { text: 'Gemini CLI 配置教程', link: '/guide/gemini-cli' }
           ]
         },
         {
           text: '疑难解答',
+          collapsed: false,
           items: [
-            { text: '总览', link: '/errors' },
-            { text: '常见问题', link: '/faq' }
+            { text: '总览', link: '/guide/troubleshooting/' },
+            { text: '安装与启动类问题', link: '/guide/troubleshooting/install' },
+            { text: '认证与 API Key 类问题', link: '/guide/troubleshooting/auth' },
+            { text: '网络与连接类问题', link: '/guide/troubleshooting/network' },
+            { text: '请求错误类问题', link: '/guide/troubleshooting/request-error' },
+            { text: '权限与分组类问题', link: '/guide/troubleshooting/permission' },
+            { text: '缓存与计费类问题', link: '/guide/troubleshooting/cache-billing' },
+            { text: 'claude-mem 插件问题', link: '/guide/troubleshooting/claude-mem' },
+            { text: '外接与兼容类问题', link: '/guide/troubleshooting/integration' },
+            { text: 'Codex CLI 专项问题', link: '/guide/troubleshooting/codex' },
+            { text: 'OpenClaw 专项问题', link: '/guide/troubleshooting/openclaw' },
+            { text: 'CC Switch 与配置管理', link: '/guide/troubleshooting/cc-switch' },
+            { text: '进阶配置与效率优化', link: '/guide/troubleshooting/advanced' }
           ]
         }
       ]
@@ -104,7 +118,7 @@ export default defineConfig({
     sidebarMenuLabel: '菜单',
     returnToTopLabel: '回到顶部',
     footer: {
-      message: `控制台入口：${apiOrigin}`,
+      message: '模型、分组、余额以控制台实时显示为准。',
       copyright: 'Copyright © 2026 ZZM API'
     }
   }

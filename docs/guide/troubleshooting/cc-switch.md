@@ -37,8 +37,3 @@ CC Switch 的问题，大多不是软件坏了，是 Provider 没切对。
 - 去操练场测同一个模型
 
 ![CC Switch 主界面概览](/screenshots/cc-switch-overview.png)
-
-## 上一页 / 下一页
-
-- 上一页：[Codex CLI 专项问题](/guide/troubleshooting/codex)
-- 下一页：[余额与计费类问题](/guide/troubleshooting/cache-billing)

@@ -48,8 +48,3 @@ description: 模型能不能用、该选哪个分组、为什么同一个模型�
 - Gemini 专用 Key
 
 这样最好排查。
-
-## 上一页 / 下一页
-
-- 上一页：[请求错误类问题](/guide/troubleshooting/request-error)
-- 下一页：[外接与兼容类问题](/guide/troubleshooting/integration)

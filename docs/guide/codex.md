@@ -91,8 +91,3 @@ codex
 - `wire_api` 不是 `responses`
 - `auth.json` 没写 Key
 - Provider 名和 `model_provider` 对不上
-
-## 上一页 / 下一页
-
-- 上一页：[Claude Code 配置教程](/guide/claude-code)
-- 下一页：[疑难解答总览](/guide/troubleshooting/)

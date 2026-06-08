@@ -42,8 +42,3 @@ description: 401、Invalid token、Key 无效这类问题的排查方式。
 - 工具里的地址
 - 工具里的 Key 字段
 - 工具缓存的旧配置
-
-## 上一页 / 下一页
-
-- 上一页：[安装与启动类问题](/guide/troubleshooting/install)
-- 下一页：[网络与连接类问题](/guide/troubleshooting/network)

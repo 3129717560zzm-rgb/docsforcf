@@ -1,5 +1,5 @@
 ---
-title: 余额与计费类问题
+title: 缓存与计费类问题
 description: 余额不足、缓存、续费后仍报错时怎么查。
 ---
 
@@ -42,7 +42,3 @@ description: 余额不足、缓存、续费后仍报错时怎么查。
 - 退出工具重开
 - 换短请求再测
 - 去操练场测同一个模型
-
-## 上一页
-
-- 上一页：[CC Switch 与配置管理](/guide/troubleshooting/cc-switch)

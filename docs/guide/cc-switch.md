@@ -79,8 +79,3 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex、Gemini CLI 的供�
 ![CC Switch 启用状态](/screenshots/cc-switch-provider-enabled.png)
 
 如果还不通，先去操练场测同一个模型。
-
-## 上一页 / 下一页
-
-- 上一页：[Node.js 与 Git 环境配置](/guide/nodejs-git)
-- 下一页：[Claude Code 配置教程](/guide/claude-code)
