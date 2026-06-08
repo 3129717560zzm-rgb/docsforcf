@@ -17,9 +17,9 @@ ZZM API 同时支持三种协议：OpenAI、Anthropic、Gemini。不同工具用
 | Anthropic 兼容 | `https://zzmapi.zzmsgdsg.xyz` | `https://zzmapi.zzmsgdsg.xyz/v1/messages` |
 | Gemini 兼容 | `https://zzmapi.zzmsgdsg.xyz` | `https://zzmapi.zzmsgdsg.xyz/v1beta/models/{model}:generateContent` |
 
-<div class="zzm-tip">
-  <strong>为什么 Claude Code / Gemini CLI 的 Base URL 不写 <code>/v1</code>？</strong>因为这两个工具内部会自动拼接接口路径。填根域名，工具自己拼出 <code>/v1/messages</code>。Codex 不同，它的 Base URL 必须带 <code>/v1</code>，因为 OpenWebUI 生态约定如此。
-</div>
+::: tip 为什么 Claude Code / Gemini CLI 的 Base URL 不写 `/v1`？
+因为这两个工具内部会自动拼接接口路径。填根域名，工具自己拼出 `/v1/messages`。Codex 不同，它的 Base URL 必须带 `/v1`。
+:::
 
 认证方式统一：`Authorization: Bearer YOUR_KEY`
 

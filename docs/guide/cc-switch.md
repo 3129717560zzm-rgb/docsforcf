@@ -9,19 +9,34 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex、Gemini CLI 的供�
 
 ![CC Switch 主界面概览](/screenshots/cc-switch-overview.png)
 
-## 先下载
+## 下载与安装
 
 下载地址：[CC Switch Releases](https://github.com/farion1231/cc-switch/releases)
 
-常见安装方式：
+### Windows
 
-- Windows：`.msi` 或便携版
-- macOS：`.dmg`
-- Linux：`.AppImage` / `.deb`
+- 下载 `.msi` 或便携版
+- 双击安装
+- 安装完成后直接打开
+
+### macOS
+
+- 下载 `.dmg`
+- 拖入 `Applications`
+- 首次打不开时，到系统安全设置里点“仍要打开”
+
+### Linux
+
+- 常见是 `.AppImage` 或 `.deb`
+- 先给执行权限，再运行
 
 ![CC Switch 下载页面](/screenshots/cc-switch-downloads.png)
 
-## 先记住地址差别
+## 添加渠道
+
+先从控制台拿到 `API Key` 和 `请求地址`。
+
+## 配置前先记住地址差别
 
 | 工具 | 地址 |
 | --- | --- |
@@ -29,9 +44,11 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex、Gemini CLI 的供�
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
 | Gemini CLI | `https://zzmapi.zzmsgdsg.xyz` |
 
-## 配 Codex
+## 渠道示例
 
-新增 Provider 时这样填：
+### Codex
+
+新增 Codex Provider 时这样填：
 
 | 字段 | 填写 |
 | --- | --- |
@@ -44,7 +61,9 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex、Gemini CLI 的供�
 
 ![CC Switch Codex 配置界面](/screenshots/cc-switch-codex-provider.png)
 
-## 配 Claude Code
+### Claude Code
+
+新增 Claude Code Provider 时这样填：
 
 | 字段 | 填写 |
 | --- | --- |
@@ -58,7 +77,9 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex、Gemini CLI 的供�
 
 ![CC Switch Claude Code 配置界面](/screenshots/cc-switch-claude-provider.png)
 
-## 配 Gemini CLI
+### Gemini CLI
+
+新增 Gemini CLI Provider 时这样填：
 
 | 字段 | 填写 |
 | --- | --- |
@@ -69,7 +90,14 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex、Gemini CLI 的供�
 
 ![CC Switch Gemini CLI 配置界面](/screenshots/cc-switch-gemini-provider.png)
 
-## 启用和测试
+## 附加设置
+
+建议至少确认两件事：
+
+- 当前启用的是你刚加的那个 Provider
+- 切换后会应用到目标工具，不要只改界面不重启工具
+
+## 开始使用
 
 1. 打开目标 Provider
 2. 设为启用

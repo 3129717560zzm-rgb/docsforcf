@@ -7,7 +7,9 @@ description: Claude Code CLI 和 VS Code 插件接入 ZZM API。
 
 这页只做 Claude Code。
 
-## 地址先填对
+## 安装 Claude Code
+
+### 地址先填对
 
 Claude Code 用这个地址：
 
@@ -17,15 +19,11 @@ https://zzmapi.zzmsgdsg.xyz
 
 不要加 `/v1`。
 
-## 方式一：CC-Switch
-
-想省事，直接看：
+### 方式一：CC-Switch
 
 - [CC-Switch 配置教程](/guide/cc-switch)
 
-## 方式二：手动配置
-
-### 安装
+### 方式二：手动安装
 
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
@@ -33,6 +31,15 @@ claude --version
 ```
 
 ![终端 claude --version 输出](/screenshots/terminal-claude-version.png)
+
+### 常见问题
+
+- 地址多写了 `/v1`
+- Key 复制错了
+- 模型名手打错了
+- 终端装好了但 VS Code 还没刷新
+
+## 配置 API Key
 
 ### 创建 Key
 
@@ -58,7 +65,7 @@ claude --version
 
 ![Claude Code settings.json 配置截图](/screenshots/claude-settings-editor.png)
 
-### 测试
+## 开始使用
 
 保存后执行：
 
@@ -68,6 +75,8 @@ claude
 
 发一句 `只回复 OK`。
 
+如果你在 VS Code 里用插件，它也会读取同一份配置。
+
 ## VS Code 插件
 
 1. 扩展市场搜索 `Claude Code`
@@ -75,10 +84,3 @@ claude
 3. 插件会读取 `~/.claude/settings.json`
 
 ![VS Code Claude Code 插件侧边栏](/screenshots/vscode-claude-sidebar.png)
-
-## 最常见的错
-
-- 地址多写了 `/v1`
-- Key 复制错了
-- 模型名手打错了
-- 操练场本身就调不通

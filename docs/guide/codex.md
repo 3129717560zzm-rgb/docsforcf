@@ -7,7 +7,9 @@ description: Codex CLI 和 VS Code 插件接入 ZZM API。
 
 这页只做 Codex。
 
-## 地址先填对
+## 安装 Codex CLI
+
+### 地址先填对
 
 Codex 用这个地址：
 
@@ -17,15 +19,11 @@ https://zzmapi.zzmsgdsg.xyz/v1
 
 这里必须带 `/v1`。
 
-## 方式一：CC-Switch
-
-图形界面配置看这里：
+### 方式一：CC-Switch
 
 - [CC-Switch 配置教程](/guide/cc-switch)
 
-## 方式二：手动配置
-
-### 安装
+### 方式二：手动安装
 
 ```bash
 npm install -g @openai/codex
@@ -33,6 +31,15 @@ codex --version
 ```
 
 ![终端 codex --version 输出](/screenshots/terminal-codex-version.png)
+
+### 常见问题
+
+- 地址没带 `/v1`
+- `wire_api` 不是 `responses`
+- `auth.json` 没写 Key
+- Provider 名和 `model_provider` 对不上
+
+## 配置 API
 
 ### 创建 Key
 
@@ -68,7 +75,18 @@ requires_openai_auth = true
 
 ![Codex 配置文件截图](/screenshots/codex-config-editor.png)
 
-### 测试
+### 配置参数参考
+
+| 参数 | 说明 | 建议值 |
+| --- | --- | --- |
+| `model_provider` | 使用的 Provider 名 | `zzmapi` |
+| `base_url` | 请求地址 | `https://zzmapi.zzmsgdsg.xyz/v1` |
+| `wire_api` | 协议类型 | `responses` |
+| `env_key` | 读取的 Key 名 | `OPENAI_API_KEY` |
+| `model_context_window` | 上下文窗口 | `950000` |
+| `model_auto_compact_token_limit` | 自动压缩阈值 | `900000` |
+
+## 开始使用
 
 ```bash
 export OPENAI_API_KEY="你的令牌Key"
@@ -84,10 +102,3 @@ codex
 3. 插件会读取本地 Codex 配置
 
 ![VS Code Codex 插件侧边栏](/screenshots/vscode-codex-sidebar.png)
-
-## 最常见的错
-
-- 地址没带 `/v1`
-- `wire_api` 不是 `responses`
-- `auth.json` 没写 Key
-- Provider 名和 `model_provider` 对不上

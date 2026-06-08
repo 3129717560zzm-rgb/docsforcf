@@ -67,7 +67,7 @@ export default defineConfig({
             { text: '认证与 API Key 类问题', link: '/guide/troubleshooting/auth' },
             { text: '网络与连接类问题', link: '/guide/troubleshooting/network' },
             { text: '请求错误类问题', link: '/guide/troubleshooting/request-error' },
-            { text: '权限与分组类问题', link: '/guide/troubleshooting/permission' },
+            { text: '权限类问题', link: '/guide/troubleshooting/permission' },
             { text: '缓存与计费类问题', link: '/guide/troubleshooting/cache-billing' },
             { text: 'claude-mem 插件问题', link: '/guide/troubleshooting/claude-mem' },
             { text: '外接与兼容类问题', link: '/guide/troubleshooting/integration' },
@@ -118,7 +118,6 @@ export default defineConfig({
     sidebarMenuLabel: '菜单',
     returnToTopLabel: '回到顶部',
     footer: {
-      message: '模型、分组、余额以控制台实时显示为准。',
       copyright: 'Copyright © 2026 ZZM API'
     }
   }

@@ -7,7 +7,7 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 
 这页只看两件事：地址怎么填，Key 怎么建。
 
-## 先看地址
+## API / URL
 
 | 工具 | Base URL |
 | --- | --- |
@@ -21,17 +21,22 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 - `Codex` 带 `/v1`
 - `Claude Code` 不带 `/v1`
 
-## 创建 Key
+登录控制台后，右侧 `API 信息` 里也能看到当前请求地址。
 
-1. 打开 [令牌页](https://zzmapi.zzmsgdsg.xyz/console/token)。
-2. 点创建令牌。
-3. 给 Key 起名字。
-4. 选择分组。
-5. 创建后马上复制保存。
+![ZZM API 控制台首页与 API 信息](/screenshots/zzm-console-api-info.png)
+
+## Key / 令牌
+
+1. 打开 [令牌页](https://zzmapi.zzmsgdsg.xyz/console/token)
+2. 点 `新建` 或 `添加令牌`
+3. 给 Key 起名字
+4. 选择分组
+5. 点 `提交`
+6. 创建后马上复制保存
 
 ![ZZM API 创建令牌页面](/screenshots/zzm-token-create.png)
 
-## 分组怎么选
+## 选择分组
 
 常用就看这三个：
 
@@ -43,7 +48,11 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 
 看不准时，先去操练场测。
 
-![ZZM API 创建令牌页的分组下拉框](/screenshots/zzm-token-create-group-dropdown.png)
+![ZZM API 创建令牌页分组下拉面板](/screenshots/zzm-token-create-group-panel.png)
+
+选完分组后，直接点右下角 `提交`。
+
+![ZZM API 创建令牌页提交按钮](/screenshots/zzm-token-create-submit.png)
 
 ## Key 只显示一次
 
@@ -52,7 +61,9 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 - 不要把完整 Key 发群里
 - 不用了直接删
 
-![ZZM API 令牌管理页面](/screenshots/zzm-token-management.png)
+创建完成后，可以在令牌列表里复制密钥或复制连接信息。
+
+![ZZM API 令牌页复制密钥与连接信息](/screenshots/zzm-token-copy-info.png)
 
 ## 创建后马上测试
 

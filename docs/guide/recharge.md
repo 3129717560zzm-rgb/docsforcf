@@ -23,7 +23,7 @@ QQ群：`1098412601`
 
 加群入口：[QQ 群 1098412601](https://qm.qq.com/q/wKACZYaaTS)
 
-[待补截图：充值页，需标注充值按钮和余额位置]
+![ZZM API 充值页，标注充值区域和余额位置](/screenshots/zzm-topup-highlight.png)
 
 ## 到账后检查
 

@@ -12,6 +12,9 @@ description: 出问题后该怎么进群提问，带什么信息。
 - QQ 群：`1098412601`
 - 加群链接：[QQ 群 1098412601](https://qm.qq.com/q/wKACZYaaTS)
 
+添加群时，最好顺手写明你的来意，方便群里更快分流。  
+如果你是充值后遇到问题，进群时最好同时带上订单号或充值时间。
+
 ## 进群前先做这三步
 
 1. 去 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型
@@ -37,5 +40,10 @@ description: 出问题后该怎么进群提问，带什么信息。
 - 配置类问题：先看 [教程](/guide/)
 - Codex 问题：先看 [Codex CLI 专项问题](/guide/troubleshooting/codex)
 - 401 / 403 / 429：先看 [请求错误类问题](/guide/troubleshooting/request-error)
+- 网络异常：先看 [网络与连接类问题](/guide/troubleshooting/network)
 
-[待补截图：QQ 群入口页，需标注群号和进群备注]
+## 群二维码
+
+直接扫码也行。
+
+![ZZM API 付费群二维码](/screenshots/zzm-qq-group-qr.png)

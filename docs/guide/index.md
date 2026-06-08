@@ -30,7 +30,7 @@ description: 按同行站结构整理的 ZZM API 教程入口。
 - [认证与 API Key 类问题](/guide/troubleshooting/auth)
 - [网络与连接类问题](/guide/troubleshooting/network)
 - [请求错误类问题](/guide/troubleshooting/request-error)
-- [权限与分组类问题](/guide/troubleshooting/permission)
+- [权限类问题](/guide/troubleshooting/permission)
 - [缓存与计费类问题](/guide/troubleshooting/cache-billing)
 - [claude-mem 插件问题](/guide/troubleshooting/claude-mem)
 - [外接与兼容类问题](/guide/troubleshooting/integration)

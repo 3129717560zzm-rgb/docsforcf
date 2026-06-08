@@ -15,18 +15,18 @@ description: 按问题类型拆分的排查入口。
 
 ## 按问题找页面
 
-- [安装与启动类问题](/guide/troubleshooting/install)
-- [认证与 API Key 类问题](/guide/troubleshooting/auth)
-- [网络与连接类问题](/guide/troubleshooting/network)
-- [请求错误类问题](/guide/troubleshooting/request-error)
-- [权限与分组类问题](/guide/troubleshooting/permission)
-- [缓存与计费类问题](/guide/troubleshooting/cache-billing)
-- [claude-mem 插件问题](/guide/troubleshooting/claude-mem)
-- [外接与兼容类问题](/guide/troubleshooting/integration)
-- [Codex CLI 专项问题](/guide/troubleshooting/codex)
-- [OpenClaw 专项问题](/guide/troubleshooting/openclaw)
-- [CC Switch 与配置管理](/guide/troubleshooting/cc-switch)
-- [进阶配置与效率优化](/guide/troubleshooting/advanced)
+- [安装与启动类问题](/guide/troubleshooting/install) - 安装失败、命令找不到、CLI 或插件启动异常
+- [认证与 API Key 类问题](/guide/troubleshooting/auth) - 401、Invalid token、Key 被删、字段填错
+- [网络与连接类问题](/guide/troubleshooting/network) - 连不上、超时、代理冲突、地址多写或少写 `/v1`
+- [请求错误类问题](/guide/troubleshooting/request-error) - 403、429、model not found、上游超时
+- [权限类问题](/guide/troubleshooting/permission) - 分组不匹配、模型无权限、不同工具表现不一致
+- [缓存与计费类问题](/guide/troubleshooting/cache-billing) - 余额不足、续费后仍报错、旧 Key 混用
+- [claude-mem 插件问题](/guide/troubleshooting/claude-mem) - 本体正常但插件层有问题时先看这里
+- [外接与兼容类问题](/guide/troubleshooting/integration) - 第三方客户端、兼容层、协议类型不一致
+- [Codex CLI 专项问题](/guide/troubleshooting/codex) - `config.toml`、`auth.json`、`responses` 协议问题
+- [OpenClaw 专项问题](/guide/troubleshooting/openclaw) - OpenClaw 或类似外接工具的单独排查入口
+- [CC Switch 与配置管理](/guide/troubleshooting/cc-switch) - Provider 切换不生效、启用了错误配置
+- [进阶配置与效率优化](/guide/troubleshooting/advanced) - 一工具一 Key、先操练场后本地、减少混乱
 
 ## 最常见的三个原因
 
@@ -52,3 +52,7 @@ description: 按问题类型拆分的排查入口。
 - 调用时间
 
 QQ群：`1098412601`
+
+::: tip 提示
+有问题先看看是不是大面积故障。如果别人都正常，多半还是本地配置、地址、分组或 Key 的问题。
+:::
