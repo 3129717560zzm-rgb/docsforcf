@@ -5,14 +5,14 @@ const apiOrigin = 'https://zzmapi.zzmsgdsg.xyz'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'ZZM API 文档',
-  description: 'ZZM API — 统一模型网关，支持 Claude Code、Codex、Gemini CLI、Cherry Studio 等工具接入',
+  description: 'ZZM API 教程文档，覆盖注册、Key、工具接入、常见问题与 API 调用说明。',
   cleanUrls: true,
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }],
-    ['meta', { name: 'theme-color', content: '#00d4ff' }],
-    ['meta', { property: 'og:title', content: 'ZZM API 使用文档' }],
-    ['meta', { property: 'og:description', content: 'OpenAI / Anthropic / Gemini 兼容 API 网关配置指南' }],
+    ['meta', { name: 'theme-color', content: '#1677ff' }],
+    ['meta', { property: 'og:title', content: 'ZZM API 文档' }],
+    ['meta', { property: 'og:description', content: 'ZZM API 配置指南与 API 文档' }],
     ['meta', { property: 'og:type', content: 'website' }]
   ],
   themeConfig: {
@@ -20,56 +20,51 @@ export default defineConfig({
     siteTitle: 'ZZM API',
     nav: [
       { text: '首页', link: '/' },
-      { text: '快速开始', link: '/quick-start' },
-      { text: '令牌分组', link: '/groups' },
-      { text: '编码工具', link: '/coding-agents/' },
-      { text: '控制台', link: apiOrigin }
+      { text: '教程', link: '/quick-start' },
+      { text: '疑难解答', link: '/errors' },
+      { text: 'API', link: '/api/' }
     ],
-    sidebar: [
-      {
-        text: '开始使用',
-        items: [
-          { text: '首页', link: '/' },
-          { text: '快速开始', link: '/quick-start' },
-          { text: '令牌分组', link: '/groups' },
-          { text: '操练场', link: '/playground' }
-        ]
-      },
-      {
-        text: '编码工具',
-        items: [
-          { text: '总览与地址速查', link: '/coding-agents/' },
-          { text: 'CC Switch 配置', link: '/coding-agents/cc-switch' },
-          { text: 'Claude Code', link: '/coding-agents/claude-code' },
-          { text: 'Codex', link: '/coding-agents/codex' },
-          { text: 'Gemini CLI', link: '/coding-agents/gemini-cli' },
-          { text: 'VS Code 插件', link: '/coding-agents/vscode-plugins' }
-        ]
-      },
-      {
-        text: '聊天与生图',
-        items: [
-          { text: 'Cherry Studio', link: '/clients/cherry-studio' },
-          { text: '通用 OpenAI 客户端', link: '/clients/' },
-          { text: 'gpt-image-2 生图', link: '/image-generation' }
-        ]
-      },
-      {
-        text: 'API 参考',
-        items: [
-          { text: '接口规范', link: '/api/' },
-          { text: 'SDK 示例', link: '/api/sdk' }
-        ]
-      },
-      {
-        text: '支持',
-        items: [
-          { text: '错误速查', link: '/errors' },
-          { text: 'FAQ', link: '/faq' },
-          { text: '账号与社群', link: '/account/' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/api/': [
+        {
+          text: 'API',
+          items: [
+            { text: '接口说明', link: '/api/' },
+            { text: 'SDK 示例', link: '/api/sdk' }
+          ]
+        }
+      ],
+      '/': [
+        {
+          text: '入门',
+          items: [
+            { text: '注册与充值', link: '/quick-start' },
+            { text: '请求地址 / Key', link: '/account/' },
+            { text: '模型与分组', link: '/groups' },
+            { text: '操练场测试', link: '/playground' }
+          ]
+        },
+        {
+          text: '工具配置',
+          items: [
+            { text: '总览与地址速查', link: '/coding-agents/' },
+            { text: 'CC-Switch 配置教程', link: '/coding-agents/cc-switch' },
+            { text: 'Claude Code 配置教程', link: '/coding-agents/claude-code' },
+            { text: 'Codex 配置教程', link: '/coding-agents/codex' },
+            { text: 'Gemini CLI 配置教程', link: '/coding-agents/gemini-cli' },
+            { text: 'VS Code 插件配置', link: '/coding-agents/vscode-plugins' },
+            { text: 'Cherry Studio 配置教程', link: '/clients/cherry-studio' }
+          ]
+        },
+        {
+          text: '疑难解答',
+          items: [
+            { text: '总览', link: '/errors' },
+            { text: '常见问题', link: '/faq' }
+          ]
+        }
+      ]
+    },
     search: {
       provider: 'local',
       options: {
@@ -98,7 +93,7 @@ export default defineConfig({
       text: '最后更新',
       formatOptions: {
         dateStyle: 'short',
-        timeStyle: 'medium'
+        timeStyle: 'short'
       }
     },
     docFooter: {
@@ -109,7 +104,7 @@ export default defineConfig({
     sidebarMenuLabel: '菜单',
     returnToTopLabel: '回到顶部',
     footer: {
-      message: '模型、分组倍率、余额以控制台实时显示为准。',
+      message: `控制台入口：${apiOrigin}`,
       copyright: 'Copyright © 2026 ZZM API'
     }
   }
