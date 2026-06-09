@@ -49,4 +49,4 @@ https://zzmapi.zzmsgdsg.xyz
 - 插件自己的配置截图
 - 操练场测试结果
 
-[待补截图：claude-mem 或类似插件配置页]
+![claude-mem 插件配置页占位图](/screenshots/zzm-claude-mem-placeholder.png)

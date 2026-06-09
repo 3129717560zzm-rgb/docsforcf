@@ -52,4 +52,4 @@ description: OpenClaw 一类外接工具的专项排查入口。
 - 报错截图
 - 操练场结果
 
-[待补截图：OpenClaw 配置页]
+![OpenClaw 配置页占位图](/screenshots/zzm-openclaw-placeholder.png)
