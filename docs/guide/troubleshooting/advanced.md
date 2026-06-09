@@ -13,7 +13,6 @@ description: 更省事、更稳妥地使用 ZZM API 的一些进阶建议。
 
 - Claude Code 一个 Key
 - Codex 一个 Key
-- Gemini CLI 一个 Key
 
 这样出了问题最好排查，也方便单独停用。
 

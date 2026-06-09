@@ -14,7 +14,6 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 | Codex CLI / Codex 插件 | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Cherry Studio / OpenAI SDK / OpenAI Compatible 客户端 | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
-| Gemini CLI | `https://zzmapi.zzmsgdsg.xyz` |
 
 记法很简单：
 
@@ -44,7 +43,6 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 | --- | --- |
 | Claude Code | `claude专用稳定` |
 | Codex | `Codex混池` |
-| Gemini CLI | `gemin-cli` |
 
 看不准时，先去操练场测。
 

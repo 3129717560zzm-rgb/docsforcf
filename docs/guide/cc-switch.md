@@ -1,6 +1,6 @@
 ---
 title: CC-Switch 配置教程
-description: 用 CC-Switch 统一管理 Claude Code、Codex、Gemini CLI 的供应商配置。
+description: 用 CC-Switch 统一管理 Claude Code、Codex 的供应商配置。
 ---
 
 # CC-Switch 配置教程
@@ -42,7 +42,6 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex、Gemini CLI 的供�
 | --- | --- |
 | Codex | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
-| Gemini CLI | `https://zzmapi.zzmsgdsg.xyz` |
 
 ## 渠道示例
 
@@ -76,19 +75,6 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex、Gemini CLI 的供�
 这里不要加 `/v1`。
 
 ![CC Switch Claude Code 配置界面](/screenshots/cc-switch-claude-provider.png)
-
-### Gemini CLI
-
-新增 Gemini CLI Provider 时这样填：
-
-| 字段 | 填写 |
-| --- | --- |
-| Provider 名称 | `ZZM API Gemini` |
-| API Key | 你的 Key |
-| API 地址 | `https://zzmapi.zzmsgdsg.xyz` |
-| 模型 | 例如 `gemini-2.5-pro` |
-
-![CC Switch Gemini CLI 配置界面](/screenshots/cc-switch-gemini-provider.png)
 
 ## 附加设置
 

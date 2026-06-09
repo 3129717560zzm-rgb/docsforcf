@@ -13,7 +13,6 @@ description: 地址填错、连接失败、超时、代理冲突时怎么查。
 | --- | --- |
 | Codex | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
-| Gemini CLI | `https://zzmapi.zzmsgdsg.xyz` |
 
 ### 常见现象
 

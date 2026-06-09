@@ -58,4 +58,3 @@ git --version
 - [CC-Switch 配置教程](/guide/cc-switch)
 - [Claude Code 配置教程](/guide/claude-code)
 - [Codex 配置教程](/guide/codex)
-- [Gemini CLI 配置教程](/guide/gemini-cli)

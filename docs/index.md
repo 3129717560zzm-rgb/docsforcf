@@ -20,7 +20,7 @@ features:
     link: /guide/register
   - icon: ⚙️
     title: 环境与配置
-    details: Node.js / Git 环境、CC-Switch、Claude Code、Codex、Gemini CLI 配置。
+    details: Node.js / Git 环境、CC-Switch、Claude Code、Codex 配置。
     link: /guide/nodejs-git
   - icon: 🛠️
     title: 疑难解答

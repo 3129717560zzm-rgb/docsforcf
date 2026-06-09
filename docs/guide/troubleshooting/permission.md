@@ -15,7 +15,6 @@ description: 模型能不能用、该选哪个分组、为什么同一个模型�
 | --- | --- |
 | Claude Code | `claude专用稳定` |
 | Codex | `Codex混池` |
-| Gemini CLI | `gemin-cli` |
 
 ![创建令牌页面中的分组下拉框](/screenshots/zzm-token-create-group-dropdown.png)
 
@@ -45,13 +44,12 @@ description: 模型能不能用、该选哪个分组、为什么同一个模型�
 
 - Claude 专用 Key
 - Codex 专用 Key
-- Gemini 专用 Key
 
 这样最好排查。
 
 ### 先别用一个 Key 混所有工具
 
-如果你把 Claude、Codex、Gemini 全塞到同一个 Key 里，一旦出问题就很难判断是：
+如果你把多个工具全塞到同一个 Key 里，一旦出问题就很难判断是：
 
 - 分组错了
 - 模型错了

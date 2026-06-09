@@ -40,7 +40,6 @@ description: 按问题类型拆分的排查入口。
 | --- | --- |
 | Codex | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
-| Gemini CLI | `https://zzmapi.zzmsgdsg.xyz` |
 
 ## 还不行时
 

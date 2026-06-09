@@ -54,8 +54,7 @@ export default defineConfig({
             { text: 'Node.js 与 Git 环境配置', link: '/guide/nodejs-git' },
             { text: 'CC-Switch 配置教程', link: '/guide/cc-switch' },
             { text: 'Claude Code 配置教程', link: '/guide/claude-code' },
-            { text: 'Codex 配置教程', link: '/guide/codex' },
-            { text: 'Gemini CLI 配置教程', link: '/guide/gemini-cli' }
+            { text: 'Codex 配置教程', link: '/guide/codex' }
           ]
         },
         {

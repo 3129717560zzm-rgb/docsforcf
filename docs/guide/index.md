@@ -21,7 +21,6 @@ description: 按同行站结构整理的 ZZM API 教程入口。
 - [CC-Switch 配置教程](/guide/cc-switch)
 - [Claude Code 配置教程](/guide/claude-code)
 - [Codex 配置教程](/guide/codex)
-- [Gemini CLI 配置教程](/guide/gemini-cli)
 
 ## 疑难解答
 
@@ -44,6 +43,6 @@ description: 按同行站结构整理的 ZZM API 教程入口。
 | 场景 | 填写 |
 | --- | --- |
 | Codex / Cherry Studio / OpenAI SDK | `https://zzmapi.zzmsgdsg.xyz/v1` |
-| Claude Code / Gemini CLI | `https://zzmapi.zzmsgdsg.xyz` |
+| Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
 
 填反了，后面基本都会报错。

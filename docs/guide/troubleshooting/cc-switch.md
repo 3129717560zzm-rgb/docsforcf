@@ -13,7 +13,6 @@ CC Switch 的问题，大多不是软件坏了，是 Provider 没切对。
 
 - Claude Code 看 Claude Provider
 - Codex 看 Codex Provider
-- Gemini CLI 看 Gemini Provider
 
 ![CC Switch 启用状态](/screenshots/cc-switch-provider-enabled.png)
 
