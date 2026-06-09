@@ -17,7 +17,7 @@ description: 出问题后该怎么进群提问，带什么信息。
 
 ## 进群前先做这三步
 
-1. 去 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型
+1. 去 [控制台测试](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型
 2. 去 [令牌页](https://zzmapi.zzmsgdsg.xyz/console/token) 确认 Key 还在
 3. 去 [充值页](https://zzmapi.zzmsgdsg.xyz/console/topup) 确认余额正常
 

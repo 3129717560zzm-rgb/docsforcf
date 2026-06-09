@@ -13,7 +13,7 @@ description: 使用 claude-mem 一类插件时的排查入口。
 
 1. 直接启动 Claude Code
 2. 发一句 `只回复 OK`
-3. 再去操练场测同一个模型
+3. 再做一次控制台测试
 
 如果本体正常、插件异常，优先查插件自己。
 
@@ -47,6 +47,6 @@ https://zzmapi.zzmsgdsg.xyz
 - Claude Code 本体是否正常
 - 插件名和版本
 - 插件自己的配置截图
-- 操练场测试结果
+- 控制台测试结果
 
 ![claude-mem 插件配置示意图](/screenshots/zzm-claude-mem-annotated.png)

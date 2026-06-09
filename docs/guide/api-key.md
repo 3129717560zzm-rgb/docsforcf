@@ -12,7 +12,7 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 | 工具 | Base URL |
 | --- | --- |
 | Codex CLI / Codex 插件 | `https://zzmapi.zzmsgdsg.xyz/v1` |
-| Cherry Studio / OpenAI SDK / OpenAI Compatible 客户端 | `https://zzmapi.zzmsgdsg.xyz/v1` |
+| OpenAI SDK / OpenAI Compatible 客户端 | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
 
 记法很简单：
@@ -44,7 +44,7 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 | Claude Code | `claude专用稳定` |
 | Codex | `Codex混池` |
 
-看不准时，先去操练场测。
+看不准时，先做一次控制台测试。
 
 ![ZZM API 创建令牌页分组下拉面板](/screenshots/zzm-token-create-group-panel.png)
 
@@ -65,7 +65,7 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 
 ## 创建后马上测试
 
-去 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 发一句 `只回复 OK`。
+去 [控制台测试](https://zzmapi.zzmsgdsg.xyz/console/playground) 发一句 `只回复 OK`。
 
 - 能回：继续配工具
 - 不能回：先查余额、分组、模型权限

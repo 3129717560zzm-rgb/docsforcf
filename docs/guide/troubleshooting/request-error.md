@@ -5,7 +5,7 @@ description: 403、429、model not found、超时这类请求错误怎么查。
 
 # 请求错误类问题
 
-报错先看操练场，再看调用日志。
+报错先做控制台测试，再看调用日志。
 
 ### 错误速查
 
@@ -14,7 +14,7 @@ description: 403、429、model not found、超时这类请求错误怎么查。
 | `401` | Key 不可用 | 看 [认证与 API Key 类问题](/guide/troubleshooting/auth) |
 | `403` | 模型或通道没权限 | 换分组，换模型 |
 | `429` | 并发太高或请求太快 | 降低并发，增加重试间隔 |
-| `model not found` | 模型名写错或无权限 | 去操练场复制模型名 |
+| `model not found` | 模型名写错或无权限 | 去控制台测试页复制模型名 |
 | `502` / `504` / `524` | 上游超时或异常 | 短请求重试，换模型 |
 
 ### `model not found`
@@ -23,7 +23,7 @@ description: 403、429、model not found、超时这类请求错误怎么查。
 
 正确做法：
 
-1. 打开 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground)
+1. 打开 [控制台测试](https://zzmapi.zzmsgdsg.xyz/console/playground)
 2. 选中目标模型
 3. 直接复制模型 ID
 4. 粘贴回工具

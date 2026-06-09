@@ -92,4 +92,4 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex 的供应商配置�
 
 ![CC Switch 启用状态](/screenshots/cc-switch-provider-enabled.png)
 
-如果还不通，先去操练场测同一个模型。
+如果还不通，先做一次控制台测试。
