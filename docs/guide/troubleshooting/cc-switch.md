@@ -35,7 +35,7 @@ CC Switch 的问题，大多不是软件坏了，是 Provider 没切对。
 
 - 彻底退出工具再打开
 - 回到 CC Switch 再确认状态
-- 去操练场测同一个模型
+- 去控制台测试同一个模型
 
 ![CC Switch 主界面概览](/screenshots/cc-switch-overview.png)
 

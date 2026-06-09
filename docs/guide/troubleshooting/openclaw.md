@@ -11,7 +11,7 @@ description: OpenClaw 一类外接工具的专项排查入口。
 
 先做三步：
 
-1. 去 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型
+1. 去 [控制台测试](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型
 2. 用同一个 Key 试 Claude Code 或 Codex 本体
 3. 再回到 OpenClaw 里测
 
@@ -50,6 +50,6 @@ description: OpenClaw 一类外接工具的专项排查入口。
 - 当前填写的地址格式
 - 模型名
 - 报错截图
-- 操练场结果
+- 控制台测试结果
 
 ![OpenClaw 配置示意图](/screenshots/zzm-openclaw-annotated.png)

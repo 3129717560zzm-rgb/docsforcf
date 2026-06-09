@@ -1,6 +1,6 @@
 ---
 title: 教程
-description: 按同行站结构整理的 ZZM API 教程入口。
+description: ZZM API 入门、工具配置和排障入口。
 ---
 
 # 教程
@@ -41,7 +41,7 @@ description: 按同行站结构整理的 ZZM API 教程入口。
 
 | 场景 | 填写 |
 | --- | --- |
-| Codex / Cherry Studio / OpenAI SDK | `https://zzmapi.zzmsgdsg.xyz/v1` |
+| Codex / OpenAI SDK / OpenAI Compatible 客户端 | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
 
 填反了，后面基本都会报错。

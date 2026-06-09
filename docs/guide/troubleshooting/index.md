@@ -9,7 +9,7 @@ description: 按问题类型拆分的排查入口。
 
 ## 先做这三步
 
-1. 去 [操练场](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型
+1. 去 [控制台测试](https://zzmapi.zzmsgdsg.xyz/console/playground) 测同一个模型
 2. 去 [令牌页](https://zzmapi.zzmsgdsg.xyz/console/token) 看 Key 还在不在
 3. 去 [充值页](https://zzmapi.zzmsgdsg.xyz/console/topup) 看余额够不够
 
@@ -26,7 +26,7 @@ description: 按问题类型拆分的排查入口。
 - [Codex CLI 专项问题](/guide/troubleshooting/codex) - `config.toml`、`auth.json`、`responses` 协议问题
 - [OpenClaw 专项问题](/guide/troubleshooting/openclaw) - OpenClaw 或类似外接工具的单独排查入口
 - [CC Switch 与配置管理](/guide/troubleshooting/cc-switch) - Provider 切换不生效、启用了错误配置
-- [进阶配置与效率优化](/guide/troubleshooting/advanced) - 一工具一 Key、先操练场后本地、减少混乱
+- [进阶配置与效率优化](/guide/troubleshooting/advanced) - 一工具一 Key、先控制台测试后本地、减少混乱
 
 ## 最常见的三个原因
 

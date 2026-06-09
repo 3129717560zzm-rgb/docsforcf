@@ -17,10 +17,10 @@ Base URL: https://zzmapi.zzmsgdsg.xyz/v1
 
 常见于：
 
-- Cherry Studio
+- OpenAI SDK
+- OpenAI Compatible 客户端
 - Cline
 - Roo Code
-- 其他 OpenAI Compatible 客户端
 
 ## Anthropic 协议工具
 
@@ -47,4 +47,4 @@ https://zzmapi.zzmsgdsg.xyz
 
 ## 还是不通
 
-先用操练场确认模型能回，再回头改工具。
+先用控制台测试确认模型能回，再回头改工具。
