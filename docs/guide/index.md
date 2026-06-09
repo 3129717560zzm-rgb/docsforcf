@@ -13,7 +13,6 @@ description: 按同行站结构整理的 ZZM API 教程入口。
 - [请求地址 / Key](/guide/api-key)
 - [充值 / 续费](/guide/recharge)
 - [售后群](/guide/after-sales)
-- [商务合作](/guide/business)
 
 ## 工具配置
 

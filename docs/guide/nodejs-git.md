@@ -66,7 +66,7 @@ git --version
 
 三条命令都能正常输出版本号，就说明基础环境没问题。
 
-[待补截图：终端执行 node -v、npm -v、git --version]
+![终端执行 node -v、npm -v、git --version](/screenshots/zzm-terminal-versions.png)
 
 ## 装完后继续
 

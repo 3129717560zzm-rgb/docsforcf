@@ -44,8 +44,7 @@ export default defineConfig({
             { text: '注册账号', link: '/guide/register' },
             { text: '请求地址 / Key', link: '/guide/api-key' },
             { text: '充值 / 续费', link: '/guide/recharge' },
-            { text: '售后群', link: '/guide/after-sales' },
-            { text: '商务合作', link: '/guide/business' }
+            { text: '售后群', link: '/guide/after-sales' }
           ]
         },
         {
