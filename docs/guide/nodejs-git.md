@@ -19,7 +19,7 @@ description: 配命令行工具前先装 Node.js 和 Git。
 
 ### macOS
 
-- 最省事的方式是直接用 Homebrew：
+- 可以直接用 Homebrew：
 
 ```bash
 brew install node

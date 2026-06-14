@@ -119,6 +119,6 @@ curl https://zzmapi.zzmsgdsg.xyz/v1/images/generations \
 
 ## 注意事项
 
-- Key 放后端，不要暴露在前端代码里。
+- Key 放后端，前端代码不写明文 Key。
 - 每个项目单独建 Key，方便排查和停用。
-- 报错时记录请求时间、模型名、错误码。不要发送完整 Key。
+- 报错时记录请求时间、模型名、错误码，截图里的完整 Key 需要打码。

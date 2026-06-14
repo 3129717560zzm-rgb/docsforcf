@@ -20,15 +20,15 @@ description: 使用 claude-mem 一类插件时的排查入口。
 ### 常见原因
 
 - 插件自己的配置没同步
-- 插件使用了旧 Key
+- 插件读取的不是当前 Key
 - Claude Code 能用，但插件拼接了错误地址
-- 插件内部缓存了旧模型名
+- 插件内部缓存了上一次的模型名
 
-### 最容易忽略的一点
+### 单独确认 Claude Code 本体
 
 先确认 Claude Code 本体单独运行是不是正常。
 
-如果本体都不正常，就不要先怀疑插件。
+如果本体不正常，先处理 Claude Code 本体配置。
 
 ### 地址再确认一次
 
@@ -38,7 +38,7 @@ Claude Code 一类工具用的是根域名：
 https://zzmapi.zzmsgdsg.xyz
 ```
 
-这里不要加 `/v1`。
+这里保持根域名，不带 `/v1`。
 
 ### 还不行时
 
@@ -48,5 +48,3 @@ https://zzmapi.zzmsgdsg.xyz
 - 插件名和版本
 - 插件自己的配置截图
 - 控制台测试结果
-
-![claude-mem 插件配置示意图](/screenshots/zzm-claude-mem-annotated.png)

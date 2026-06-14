@@ -5,7 +5,7 @@ description: ZZM API 入门、工具配置和排障入口。
 
 # 教程
 
-按顺序看，最省事。
+按顺序完成注册、Key、充值和工具配置。
 
 ## 入门
 
@@ -44,4 +44,4 @@ description: ZZM API 入门、工具配置和排障入口。
 | Codex / OpenAI SDK / OpenAI Compatible 客户端 | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
 
-填反了，后面基本都会报错。
+地址与工具协议不一致时，工具会直接报错或连不上。

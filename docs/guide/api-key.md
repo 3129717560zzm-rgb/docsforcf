@@ -5,7 +5,7 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 
 # 请求地址 / Key
 
-这页只看两件事：地址怎么填，Key 怎么建。
+本页说明请求地址和 Key 创建方式。
 
 ## API / URL
 
@@ -15,14 +15,10 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 | OpenAI SDK / OpenAI Compatible 客户端 | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
 
-记法很简单：
-
 - `Codex` 带 `/v1`
 - `Claude Code` 不带 `/v1`
 
-登录控制台后，右侧 `API 信息` 里也能看到当前请求地址。
-
-![ZZM API 控制台首页与 API 信息](/screenshots/zzm-console-api-info.png)
+控制台里的请求地址按上表填写。
 
 ## Key / 令牌
 
@@ -56,8 +52,8 @@ description: 创建令牌、选分组、确认不同工具的请求地址。
 
 - 创建后立刻复制
 - 每个工具单独建一个 Key
-- 不要把完整 Key 发群里
-- 不用了直接删
+- 群内沟通时只提供 Key 后几位或打码截图
+- 确认不再使用后，可在令牌页删除
 
 创建完成后，可以在令牌列表里复制密钥或复制连接信息。
 

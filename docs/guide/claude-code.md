@@ -17,7 +17,7 @@ Claude Code 用这个地址：
 https://zzmapi.zzmsgdsg.xyz
 ```
 
-不要加 `/v1`。
+这里保持根域名，不带 `/v1`。
 
 ### 方式一：CC-Switch
 
@@ -36,7 +36,7 @@ claude --version
 
 - 地址多写了 `/v1`
 - Key 复制错了
-- 模型名手打错了
+- 模型名和控制台不一致
 - 终端装好了但 VS Code 还没刷新
 
 ## 配置 API Key
@@ -63,7 +63,7 @@ claude --version
 }
 ```
 
-![Claude Code settings.json 配置截图](/screenshots/claude-settings-editor.png)
+![Claude Code settings.json 配置截图](/screenshots/zzm-claude-settings-json.png)
 
 ## 开始使用
 
@@ -82,5 +82,3 @@ claude
 1. 扩展市场搜索 `Claude Code`
 2. 安装后重启 VS Code
 3. 插件会读取 `~/.claude/settings.json`
-
-![VS Code Claude Code 插件侧边栏](/screenshots/vscode-claude-sidebar.png)

@@ -5,7 +5,7 @@ description: Python 和 Node.js 的 OpenAI SDK 接入示例，含流式输出和
 
 # SDK 示例
 
-用 OpenAI SDK 的兼容模式接入。Key 放环境变量，不要写进代码。
+用 OpenAI SDK 的兼容模式接入。Key 放环境变量，代码中不写明文 Key。
 
 ## Python
 

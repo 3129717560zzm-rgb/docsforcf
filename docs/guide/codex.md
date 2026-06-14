@@ -65,6 +65,8 @@ env_key = "OPENAI_API_KEY"
 requires_openai_auth = true
 ```
 
+![Codex config.toml 配置截图](/screenshots/zzm-codex-config-toml.png)
+
 再编辑 `~/.codex/auth.json`：
 
 ```json
@@ -72,8 +74,6 @@ requires_openai_auth = true
   "OPENAI_API_KEY": "你的令牌Key"
 }
 ```
-
-![Codex 配置文件截图](/screenshots/codex-config-editor.png)
 
 ### 配置参数参考
 
@@ -100,5 +100,3 @@ codex
 1. 扩展市场搜索 `Codex`
 2. 安装 OpenAI 官方插件
 3. 插件会读取本地 Codex 配置
-
-![VS Code Codex 插件侧边栏](/screenshots/vscode-codex-sidebar.png)

@@ -30,9 +30,9 @@ Claude Code 填：
 https://zzmapi.zzmsgdsg.xyz
 ```
 
-不要手动补 `/v1/messages`，工具会自己拼。
+保持根域名即可，工具会自动拼出 `/v1/messages`。
 
-## 常见错法
+## 常见配置问题
 
 - 把 Claude Code 当成 OpenAI Compatible 去填
 - 把 Codex 当成 Claude 那样只填根域名
@@ -47,4 +47,4 @@ https://zzmapi.zzmsgdsg.xyz
 
 ## 还是不通
 
-先用控制台测试确认模型能回，再回头改工具。
+先用控制台测试确认模型能回，再回到工具里核对配置。

@@ -1,27 +1,28 @@
 ---
 title: CC Switch 与配置管理
-description: CC Switch 改了不生效、多个 Provider 混乱时的排查方式。
+description: CC Switch 改了不生效、多个 Provider 配置不一致时的排查方式。
 ---
 
 # CC Switch 与配置管理
 
-CC Switch 的问题，大多不是软件坏了，是 Provider 没切对。
+CC Switch 只负责切换 Provider。排查时先确认当前工具读到的是哪一组 Key 和请求地址。
+
+![CC Switch 添加 Provider 入口](/screenshots/zzm-cc-switch-provider-list.png)
 
 ### CC Switch 切换后不生效
 
-先查最常见的几个点：
+先查这几个点：
 
 - Claude Code 看 Claude Provider
 - Codex 看 Codex Provider
+- 当前 Provider 是否已启用
 
-![CC Switch 启用状态](/screenshots/cc-switch-provider-enabled.png)
-
-## 常见错法
+## 常见配置问题
 
 - 新建了 Provider，但没启用
-- 启用了旧 Provider
-- Codex Provider 填成根域名
-- Claude Provider 错填成带 `/v1`
+- 启用的不是当前要测的 Provider
+- Codex Provider 使用了根域名
+- Claude Provider 使用了带 `/v1` 的地址
 
 ### 多个 Provider 时怎么查
 
@@ -37,15 +38,13 @@ CC Switch 的问题，大多不是软件坏了，是 Provider 没切对。
 - 回到 CC Switch 再确认状态
 - 去控制台测试同一个模型
 
-![CC Switch 主界面概览](/screenshots/cc-switch-overview.png)
+### 想重新核对配置
 
-### 想切回官方或重新配一遍
+先只核对这几项：
 
-如果你怀疑当前配置已经乱了，最省事的方式通常是：
+1. 当前启用的是哪一个 Provider
+2. Provider 类型是不是对应目标工具
+3. Base URL 是否按工具要求填写
+4. 目标工具是否已经彻底退出后重开
 
-1. 新建一个全新的 Provider
-2. 只启用这一份
-3. 彻底退出目标工具
-4. 重开后再测
-
-如果你只是想确认是不是中转配置本身的问题，也可以临时切回官方或空白配置做对照，再切回来。
+确认当前 Provider 后再保存，避免影响正在使用的配置。

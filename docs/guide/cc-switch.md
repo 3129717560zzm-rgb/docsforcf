@@ -5,9 +5,9 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex 的供应商配置�
 
 # CC-Switch 配置教程
 
-如果你不想手改配置文件，这页优先看。
+CC Switch 用来切换 API Key 和请求地址。
 
-![CC Switch 主界面概览](/screenshots/cc-switch-overview.png)
+每个工具单独建一个 Provider。
 
 ## 下载与安装
 
@@ -30,18 +30,29 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex 的供应商配置�
 - 常见是 `.AppImage` 或 `.deb`
 - 先给执行权限，再运行
 
-![CC Switch 下载页面](/screenshots/cc-switch-downloads.png)
-
 ## 添加渠道
 
-先从控制台拿到 `API Key` 和 `请求地址`。
+先从控制台拿到 `API Key`，再回到 CC Switch 添加 Provider。
 
-## 配置前先记住地址差别
+![CC Switch 添加 Provider 入口](/screenshots/zzm-cc-switch-provider-list.png)
+
+新增或编辑 Provider 时，重点看这几项：
+
+- Provider 名称写清工具用途
+- 官网链接可以留空
+- API Key 填当前工具要用的 Key
+- 请求地址按工具填写
+
+![CC Switch Provider 表单字段](/screenshots/zzm-cc-switch-fields.png)
+
+## 地址差别
 
 | 工具 | 地址 |
 | --- | --- |
 | Codex | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
+
+Codex 带 `/v1`，Claude Code 不带 `/v1`。
 
 ## 渠道示例
 
@@ -58,8 +69,6 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex 的供应商配置�
 | 上下文窗口 | `950000` |
 | 压缩阈值 | `900000` |
 
-![CC Switch Codex 配置界面](/screenshots/cc-switch-codex-provider.png)
-
 ### Claude Code
 
 新增 Claude Code Provider 时这样填：
@@ -72,24 +81,18 @@ description: 用 CC-Switch 统一管理 Claude Code、Codex 的供应商配置�
 | 模型 | 例如 `claude-sonnet-4-6` |
 | 上下文窗口 | `950000` |
 
-这里不要加 `/v1`。
-
-![CC Switch Claude Code 配置界面](/screenshots/cc-switch-claude-provider.png)
-
 ## 附加设置
 
-建议至少确认两件事：
+保存前再确认两件事：
 
-- 当前启用的是你刚加的那个 Provider
-- 切换后会应用到目标工具，不要只改界面不重启工具
+- Provider 类型对应目标工具
+- 请求地址没有多写或漏写 `/v1`
 
 ## 开始使用
 
-1. 打开目标 Provider
-2. 设为启用
-3. 重启对应工具
+1. 启用目标 Provider
+2. 重启对应工具
+3. 回到 CC Switch 确认启用状态
 4. 发一句 `只回复 OK`
-
-![CC Switch 启用状态](/screenshots/cc-switch-provider-enabled.png)
 
 如果还不通，先做一次控制台测试。

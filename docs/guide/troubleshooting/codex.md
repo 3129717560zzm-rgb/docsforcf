@@ -1,11 +1,11 @@
 ---
 title: Codex CLI 专项问题
-description: Codex 不读配置、地址填错、auth.json 无效这类问题。
+description: Codex 不读配置、地址不匹配、auth.json 无效这类问题。
 ---
 
 # Codex CLI 专项问题
 
-Codex 的问题，九成出在本地配置文件。
+Codex 先查本地配置文件和环境变量。
 
 ## 先看这三个文件
 
@@ -13,7 +13,7 @@ Codex 的问题，九成出在本地配置文件。
 - `~/.codex/auth.json`
 - 终端里的环境变量
 
-## 最重要的一行
+## Base URL
 
 `config.toml` 里必须是：
 
@@ -21,7 +21,7 @@ Codex 的问题，九成出在本地配置文件。
 base_url = "https://zzmapi.zzmsgdsg.xyz/v1"
 ```
 
-不能漏 `/v1`。
+这里需要带 `/v1`。
 
 ## `wire_api` 要写对
 
@@ -39,13 +39,11 @@ wire_api = "responses"
 
 1. Key 名是不是 `OPENAI_API_KEY`
 2. `env_key` 是不是也写成 `OPENAI_API_KEY`
-3. 终端里有没有旧环境变量覆盖
-
-![Codex 配置文件截图](/screenshots/codex-config-editor.png)
+3. 终端环境变量有没有覆盖配置文件
 
 ## VS Code 插件正常，CLI 不正常
 
-多数是当前终端环境有问题：
+按这个顺序查：
 
 - 关掉终端重开
 - 再执行 `codex`
@@ -58,10 +56,8 @@ codex
 
 ## CLI 正常，插件不正常
 
-多数是 VS Code 没刷新：
+按这个顺序查：
 
 1. 关闭 VS Code
 2. 重新打开
 3. 执行 `Developer: Reload Window`
-
-![VS Code Codex 插件侧边栏](/screenshots/vscode-codex-sidebar.png)
