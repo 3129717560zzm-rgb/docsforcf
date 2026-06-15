@@ -43,6 +43,17 @@ body {
   max-width: 1200px;
 }
 
+.VPNavBarTitle .logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.dark .VPNavBarTitle .logo {
+  filter: invert(1);
+}
+
 .VPDoc .content-container {
   max-width: 780px;
 }
@@ -56,18 +67,19 @@ body {
 }
 
 .VPHero {
-  padding-top: 40px !important;
-  padding-bottom: 8px !important;
+  padding-top: 104px !important;
+  padding-bottom: 18px !important;
 }
 
 .VPHero .name {
-  font-size: clamp(34px, 5vw, 48px);
-  line-height: 1.15;
+  font-size: clamp(40px, 5.2vw, 62px);
+  line-height: 1.05;
 }
 
 .VPHero .text {
-  font-size: clamp(24px, 3vw, 32px);
-  line-height: 1.25;
+  margin-top: 8px;
+  font-size: clamp(28px, 3.2vw, 40px);
+  line-height: 1.12;
 }
 
 .VPHero .tagline {
@@ -80,15 +92,80 @@ body {
   gap: 12px;
 }
 
+.VPFeatures {
+  padding-top: 20px !important;
+}
+
 .VPFeature {
   border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
+  border-radius: 10px;
   background: var(--vp-c-bg);
   box-shadow: none;
+  transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
 }
 
 .VPFeature:hover {
   border-color: var(--vp-c-brand-1);
+  transform: translateY(-2px);
+}
+
+.VPFeature .icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--vp-c-brand-soft);
+}
+
+.feature-icon {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  color: var(--vp-c-brand-1);
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 22px;
+  text-align: center;
+}
+
+.feature-icon::before,
+.feature-icon::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.feature-icon-doc::before {
+  inset: 1px 4px 1px 3px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+}
+
+.feature-icon-doc::after {
+  top: 7px;
+  left: 8px;
+  width: 8px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  box-shadow: 0 5px 0 currentColor;
+}
+
+.feature-icon-terminal::before {
+  inset: 3px 1px;
+  border: 2px solid currentColor;
+  border-radius: 5px;
+}
+
+.feature-icon-terminal::after {
+  top: 10px;
+  left: 6px;
+  width: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
 }
 
 .VPFeature .title {
@@ -122,6 +199,15 @@ body {
 
 @media (max-width: 640px) {
   .VPHero {
-    padding-top: 28px !important;
+    padding-top: 82px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .VPHero .name {
+    font-size: 38px;
+  }
+
+  .VPHero .text {
+    font-size: 28px;
   }
 }

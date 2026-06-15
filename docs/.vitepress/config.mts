@@ -9,14 +9,14 @@ export default defineConfig({
   cleanUrls: false,
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '/logo.svg' }],
+    ['link', { rel: 'icon', href: '/logo-square.png' }],
     ['meta', { name: 'theme-color', content: '#1677ff' }],
     ['meta', { property: 'og:title', content: 'ZZM API 文档' }],
     ['meta', { property: 'og:description', content: 'ZZM API 配置指南与 API 文档' }],
     ['meta', { property: 'og:type', content: 'website' }]
   ],
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo-square.png',
     siteTitle: 'ZZM API',
     nav: [
       { text: '首页', link: '/' },

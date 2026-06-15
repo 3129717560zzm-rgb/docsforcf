@@ -14,15 +14,15 @@ hero:
       text: 疑难解答
       link: /guide/troubleshooting/
 features:
-  - icon: 📝
+  - icon: "<span class=\"feature-icon feature-icon-doc\"></span>"
     title: 注册与充值
     details: 账号注册、请求地址、API Key 获取、充值续费全流程。
     link: /guide/register
-  - icon: ⚙️
+  - icon: "<span class=\"feature-icon feature-icon-terminal\"></span>"
     title: 环境与配置
     details: Node.js / Git 环境、CC-Switch、Claude Code、Codex 配置。
     link: /guide/nodejs-git
-  - icon: 🛠️
+  - icon: "<span class=\"feature-icon feature-icon-help\">?</span>"
     title: 疑难解答
     details: 高频报错与处理方案，覆盖认证、网络、外接、分组和工具专项问题。
     link: /guide/troubleshooting/
