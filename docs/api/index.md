@@ -5,7 +5,7 @@ description: ZZM API 的 OpenAI / Anthropic 兼容接口规范。
 
 # API 接口规范
 
-ZZM API 当前文档主要覆盖两种协议：OpenAI、Anthropic。不同工具用不同协议和地址。
+ZZMAPI 当前主要覆盖 OpenAI 兼容、Anthropic 兼容和生图中转场景。不同工具用不同协议和地址。
 
 ## 地址与协议
 
@@ -15,6 +15,7 @@ ZZM API 当前文档主要覆盖两种协议：OpenAI、Anthropic。不同工具
 | --- | --- | --- |
 | OpenAI 兼容 | `https://zzmapi.zzmsgdsg.xyz/v1` | `https://zzmapi.zzmsgdsg.xyz/v1/chat/completions` |
 | Anthropic 兼容 | `https://zzmapi.zzmsgdsg.xyz` | `https://zzmapi.zzmsgdsg.xyz/v1/messages` |
+| 生图中转 | `https://imgapi.zzmsgdsg.xyz` | 按工具协议自动拼接 |
 
 ::: tip 为什么 Claude Code 的 Base URL 不写 `/v1`？
 因为 Claude Code 会自动拼接接口路径。填根域名，工具自己拼出 `/v1/messages`。Codex 不同，它的 Base URL 必须带 `/v1`。
@@ -67,6 +68,15 @@ curl https://zzmapi.zzmsgdsg.xyz/v1/models \
 
 返回当前 Key 可用的所有模型。
 
+如果是画图创作页面或生图工具，优先使用生图域名读取：
+
+```bash
+curl https://imgapi.zzmsgdsg.xyz/v1/models \
+  -H "Authorization: Bearer YOUR_KEY"
+```
+
+模型列表以当前 Key 的分组权限为准。
+
 ## Responses API（Codex 使用）
 
 Codex 走 Responses API，地址同样带 `/v1`：
@@ -104,6 +114,8 @@ curl https://zzmapi.zzmsgdsg.xyz/v1/messages \
 
 ## 图片生成
 
+OpenAI 兼容生图可以走主域 `/v1/images/generations`：
+
 ```bash
 curl https://zzmapi.zzmsgdsg.xyz/v1/images/generations \
   -H "Authorization: Bearer YOUR_KEY" \
@@ -117,8 +129,17 @@ curl https://zzmapi.zzmsgdsg.xyz/v1/images/generations \
   }'
 ```
 
+画图创作站默认使用：
+
+```text
+https://imgapi.zzmsgdsg.xyz
+```
+
+不要把官方地址填进画图站。你的 Key 来自 ZZMAPI，模型也从中转站读取。
+
 ## 注意事项
 
 - Key 放后端，前端代码不写明文 Key。
 - 每个项目单独建 Key，方便排查和停用。
+- 画图、Codex、Claude Code 建议分别建 Key。
 - 报错时记录请求时间、模型名、错误码，截图里的完整 Key 需要打码。

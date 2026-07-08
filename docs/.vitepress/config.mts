@@ -4,25 +4,28 @@ const apiOrigin = 'https://zzmapi.zzmsgdsg.xyz'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'ZZM API 文档',
-  description: 'ZZM API 教程文档，覆盖注册、Key、工具接入、常见问题与 API 调用说明。',
+  title: 'ZZMAPI 使用中心',
+  description: 'ZZMAPI 使用文档，覆盖注册、充值、Key、工具接入、画图创作、账号商城、工单发票与 API 调用。',
   cleanUrls: false,
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '/logo-square.png' }],
-    ['meta', { name: 'theme-color', content: '#1677ff' }],
-    ['meta', { property: 'og:title', content: 'ZZM API 文档' }],
-    ['meta', { property: 'og:description', content: 'ZZM API 配置指南与 API 文档' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo-square.png' }],
+    ['link', { rel: 'shortcut icon', type: 'image/png', href: '/logo-square.png' }],
+    ['meta', { name: 'theme-color', content: '#111827' }],
+    ['meta', { property: 'og:title', content: 'ZZMAPI 使用中心' }],
+    ['meta', { property: 'og:description', content: 'ZZMAPI 配置指南、站内服务和 API 文档' }],
     ['meta', { property: 'og:type', content: 'website' }]
   ],
   themeConfig: {
     logo: '/logo-square.png',
-    siteTitle: 'ZZM API',
+    siteTitle: 'ZZMAPI',
     nav: [
       { text: '首页', link: '/' },
       { text: '教程', link: '/guide/register' },
+      { text: '服务', link: '/guide/account-store' },
       { text: '疑难解答', link: '/guide/troubleshooting/' },
-      { text: 'API', link: apiOrigin }
+      { text: 'API', link: '/api/' },
+      { text: '控制台', link: apiOrigin }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/3129717560zzm-rgb/docsforcf' }
@@ -39,12 +42,21 @@ export default defineConfig({
       ],
       '/guide/': [
         {
-          text: '入门',
+          text: '开始使用',
           items: [
             { text: '注册账号', link: '/guide/register' },
             { text: '请求地址 / Key', link: '/guide/api-key' },
             { text: '充值 / 续费', link: '/guide/recharge' },
             { text: '售后群', link: '/guide/after-sales' }
+          ]
+        },
+        {
+          text: '平台服务',
+          items: [
+            { text: '账号商城', link: '/guide/account-store' },
+            { text: '画图创作', link: '/guide/image-creation' },
+            { text: '拉新有礼', link: '/guide/invite' },
+            { text: '工单 / 发票', link: '/guide/tickets-invoice' }
           ]
         },
         {
@@ -116,7 +128,7 @@ export default defineConfig({
     sidebarMenuLabel: '菜单',
     returnToTopLabel: '回到顶部',
     footer: {
-      copyright: 'Copyright © 2026 ZZM API'
+      copyright: 'Copyright © 2026 ZZMAPI'
     }
   }
 })

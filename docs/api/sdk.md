@@ -105,6 +105,8 @@ console.log(response.output_text)
 
 ## 图片生成
 
+主域 OpenAI 兼容写法：
+
 ```js
 const image = await client.images.generate({
   model: 'gpt-image-2',
@@ -116,3 +118,14 @@ const image = await client.images.generate({
 
 console.log(image.data[0])
 ```
+
+如果你的工具或画图站使用生图专用域名，把 `baseURL` 改成：
+
+```js
+const imageClient = new OpenAI({
+  apiKey: process.env.ZZM_API_KEY,
+  baseURL: 'https://imgapi.zzmsgdsg.xyz/v1'
+})
+```
+
+模型 ID 以 `/v1/models` 返回结果为准，不要手写官方模型列表。

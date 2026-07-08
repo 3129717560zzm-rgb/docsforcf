@@ -5,14 +5,21 @@ description: ZZM API 入门、工具配置和排障入口。
 
 # 教程
 
-按顺序完成注册、Key、充值和工具配置。
+按真实使用顺序走：先注册登录，再充值和创建 Key，最后接入工具或使用站内服务。
 
-## 入门
+## 开始使用
 
 - [注册账号](/guide/register)
 - [请求地址 / Key](/guide/api-key)
 - [充值 / 续费](/guide/recharge)
 - [售后群](/guide/after-sales)
+
+## 平台服务
+
+- [账号商城](/guide/account-store)
+- [画图创作](/guide/image-creation)
+- [拉新有礼](/guide/invite)
+- [工单 / 发票](/guide/tickets-invoice)
 
 ## 工具配置
 
@@ -43,5 +50,6 @@ description: ZZM API 入门、工具配置和排障入口。
 | --- | --- |
 | Codex / OpenAI SDK / OpenAI Compatible 客户端 | `https://zzmapi.zzmsgdsg.xyz/v1` |
 | Claude Code | `https://zzmapi.zzmsgdsg.xyz` |
+| 画图创作 / 生图模型 | `https://imgapi.zzmsgdsg.xyz` |
 
 地址与工具协议不一致时，工具会直接报错或连不上。
